@@ -39,3 +39,4 @@ Vitalii Maletych
 Andrew Kozak
 Margo Matskevych
 Inha Kryshtal
+Nataliia Karkhut
