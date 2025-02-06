@@ -1,0 +1,32 @@
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+}
+.order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Відступи між полями */
+    width: 300px;
+    margin: auto;
+}
+.order-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
