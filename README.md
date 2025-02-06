@@ -38,3 +38,4 @@ Oleksandr Vasylovych
 Vitalii Maletych
 Andrew Kozak
 Margo Matskevych
+Inha Kryshtal
