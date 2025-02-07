@@ -26,7 +26,7 @@
           style="width: 250px"
         />
         <h3>Metal Brush</h3>
-        <p>$5.00</p>
+        <span class="item-price">5.00</span>
         <button class="addToCartBtn">Add to Cart</button>
       </div>
 
@@ -43,7 +43,7 @@
           style="width: 250px"
         />
         <h3>Kitten's Heaven Set</h3>
-        <p>$7.00</p>
+        <span class="item-price">7.00</span>
         <button class="addToCartBtn">Add to Cart</button>
       </div>
     </section>
@@ -52,6 +52,10 @@
       <div class="modal-content">
         <span id="closeCart">&times;</span>
         <h2>Shopping cart</h2>
+        <div id="emptyMessage" style="display: none">
+          Shopping cart is empty
+        </div>
+
         <div id="cartItems"></div>
         <p><strong>Total:</strong>$<span id="cartTotal">0,00</span></p>
         <form id="orderForm" class="order-form">
@@ -63,6 +67,8 @@
             type="email"
             id="email"
             placeholder="Your email address"
+            onchange="changeQuantity(1, this.value)"
+            value="1"
             required
           />
 
