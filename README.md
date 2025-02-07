@@ -40,3 +40,4 @@ Andrew Kozak
 Margo Matskevych
 Inha Kryshtal
 Nataliia Karkhut
+Pavlo Kataranchuk
