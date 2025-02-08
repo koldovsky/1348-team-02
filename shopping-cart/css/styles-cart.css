@@ -18,7 +18,7 @@
 .order-form {
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Відступи між полями */
+    gap: 10px; 
     width: 300px;
     margin: auto;
 }
