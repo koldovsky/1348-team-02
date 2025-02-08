@@ -60,7 +60,7 @@ function updateCart() {
 
         cartItemsContainer.innerHTML += `
           <div>
-                <img src="./images/${item.image}" alt="${item.name}" style="width: 46px; height: 46px; margin-right: 10px;"> 
+                <img src="./assets/images/${item.image}" alt="${item.name}" style="width: 46px; height: 46px; margin-right: 10px;"> 
                 ${item.name} x${item.quantity} - $${(item.price * item.quantity).toFixed(2)}
                 <button onclick="removeItem('${item.id}')">Remove</button> 
 
