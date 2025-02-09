@@ -42,3 +42,4 @@ Inha Kryshtal
 Nataliia Karkhut
 Pavlo Kataranchuk
 Niemiechkin Maksym
+Zahar Dariienko
