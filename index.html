@@ -1,19 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="shortcut icon" href="https://placekitten.com/96/139" type="image/x-icon">
-    <script src="https://unpkg.com/htmx.org@1.9.10"
-        integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-        crossorigin="anonymous"></script>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Pet Store</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/global/favicon.ico"/>
+    <script
+            src="https://unpkg.com/htmx.org@1.9.10"
+            integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+            crossorigin="anonymous"
+    ></script>
 </head>
 <body>
+
+    <!--Andew Kozak-->
+    <header>
+        <nav
+          data-hx-trigger="load"
+          data-hx-swap="outerHTML"
+          data-hx-get="index.header-nav.partial.html"
+        ></nav>
+    </header>
+<main>
+    <!-- Vitalii Maletych -->
+    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.promo-banners.partial.html"></section>
+    <section data-hx-trigger="load" data-hx-swap="outerHTML"
+             data-hx-get="index.carousel-products.partial.html"></section>
+    <!-- Nataliia Karkhut -->
+    <section
+           data-hx-trigger="load"
+           data-hx-swap="outerHTML"
+           data-hx-get="index.about.partial.html"
+    ></section>
     <!-- Pavlo Kataranchuk -->
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.carousel-promo.partial.html"></section>
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.food.partial.html"></section>
+    <section
+            data-hx-trigger="load"
+            data-hx-swap="outerHTML"
+            data-hx-get="index.carousel-promo.partial.html"
+    ></section>
+    <!-- Halyna Bondarchuk -->
+    <section
+            data-hx-trigger="load"
+            data-hx-swap="outerHTML"
+            data-hx-get="index.our-shop.partial.html"
+   ></section>
+    <!--Inha Kryshtal-->
+    <section
+            data-hx-trigger="load"
+            data-hx-swap="outerHTML"
+            data-hx-get="index.testimonials.partial.html"
+    ></section>
+    <!-- Pavlo Kataranchuk -->
+    <section
+            data-hx-trigger="load"
+            data-hx-swap="outerHTML"
+            data-hx-get="index.food.partial.html"
+    ></section>
+    <!-- Oleksandr Vasylovych-->
+    <section
+            data-hx-trigger="load"
+            data-hx-swap="outerHTML"
+            data-hx-get="index.carousel-new-arrivals.partial.html"
+    ></section>
+    <!-- Margo Matskevych -->
+    <section
+            data-hx-trigger="load"
+            data-hx-swap="outerHTML"
+            data-hx-get="index.cart.partial.html"
+    ></section>
+</main>
+<footer></footer>
 </body>
 </html>

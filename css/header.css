@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .backgroung-image {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 40px);
+    background-image: url("https://res2.weblium.site/res/60ab502967fbc80021ebe4fb/60b73771a6d8a40021d45177?nowebp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+  }
+  .time-contact {
+    display: flex;
+    background: rgb(242, 232, 228);
+    background-color: #f9f1eb; /* Світлий фон */
+    color: #e0633c; /* Помаранчевий текст */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+  .style-contact {
+    text-decoration: none;
+    color: #ed6435;
+  }
+  .style-contact:hover {
+    text-decoration: underline;
+  }
+  .style-time-work {
+    color: #ed6435;
+    font-weight: 600;
+  }
+  .contact-email-phone {
+    color: #ed6435;
+    font-weight: 600;
+    display: flex;
+    gap: 15px;
+  }
+  .headrer-navigation-style {
+    align-items: center;
+  }
+  .headrer-navigation {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    height: 100%;
+    align-items: center;
+  }
+  .headrer-navigation li {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  
+  .headrer-navigation li:last-of-type {
+    padding-right: 0;
+  }
+  .headrer-navigation-link {
+    text-decoration: none;
+    color: rgb(107, 107, 107);
+    font-family: "PT Sans", serif;
+  }
+  
+  .logo-link-media {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: space-between;
+    width: calc(100%-40px);
+  }
+  
+  .logo-style {
+    height: 33px;
+    width: 182px;
+  }
+  .logo-link-media {
+    height: calc(100%-40px);
+    height: 33px;
+    padding: 30px 15px;
+  }
+  .media-icon {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 56px;
+    font-family: "Baloo 2", serif;
+    color: #3c3731;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .style-text-header {
+    font-family: "PT Sans", serif;
+    font-size: 19px;
+  }
+  .btn-style {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  .btn-about {
+    background-color: #ffe8da;
+    color: #e0633c;
+    border: none;
+  }
+  
+  .btn-categories {
+    color: #2ac6c6;
+    border: 2px solid #2ac6c6;
+    background-color: transparent;
+  }
+  
+  .btn-style:hover {
+    opacity: 0.8;
+  }
+  
