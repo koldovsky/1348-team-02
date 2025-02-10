@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Pet Store</title>
+    <link rel="stylesheet" href="css/index.css">
     <link rel="icon" type="image/x-icon" href="assets/images/global/favicon.ico"/>
     <script
             src="https://unpkg.com/htmx.org@1.9.10"
@@ -13,20 +14,25 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-
-    <!--Andew Kozak-->
-    <header>
-        <nav
-          data-hx-trigger="load"
-          data-hx-swap="outerHTML"
-          data-hx-get="index.header-nav.partial.html"
-        ></nav>
-    </header>
+<!--Andew Kozak-->
+<header>
+    <nav
+            data-hx-trigger="load"
+            data-hx-swap="outerHTML"
+            data-hx-get="index.header-nav.partial.html"
+    ></nav>
+</header>
 <main>
     <!-- Vitalii Maletych -->
     <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.promo-banners.partial.html"></section>
     <section data-hx-trigger="load" data-hx-swap="outerHTML"
              data-hx-get="index.carousel-products.partial.html"></section>
+    <!-- Nataliia Karkhut -->
+    <section
+            data-hx-trigger="load"
+            data-hx-swap="outerHTML"
+            data-hx-get="index.about.partial.html"
+    ></section>
     <!-- Pavlo Kataranchuk -->
     <section
             data-hx-trigger="load"
@@ -38,7 +44,7 @@
             data-hx-trigger="load"
             data-hx-swap="outerHTML"
             data-hx-get="index.our-shop.partial.html"
-   ></section>
+    ></section>
     <!--Inha Kryshtal-->
     <section
             data-hx-trigger="load"
