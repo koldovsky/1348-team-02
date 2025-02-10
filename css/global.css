@@ -4,5 +4,12 @@
     --title-font: "Baloo 2", cursive;
     --body-font: "PT Sans", sans-serif;
     font-family: var(--body-font);
+    --title-color: rgb(60, 55, 49);
+    --body-color: rgb(60, 55, 49);
+    --price-color: rgb(237, 100, 53);
     scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: inherit;
 }
