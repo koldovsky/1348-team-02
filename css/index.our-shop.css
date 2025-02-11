@@ -1,16 +1,20 @@
-.our-shop__title{
+.our-shop__title {
     font-family: var(--title-font);
     color: var(--title-color);
 }
-.our-shop__button{
+
+.our-shop__button {
     font-family: var(--title-body);
 }
-.our-shop__item-price{
+
+.our-shop__item-price {
     color: var(--price-color);
 }
-.our-shop__description{
+
+.our-shop__description {
     color: var(--body-color);
 }
-.our-shop__categories-list-item{
+
+.our-shop__categories-list-item {
     color: var(--title-color);
 }

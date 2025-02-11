@@ -1,83 +1,83 @@
 <!-- Margo Matskevych  -->
 <section>
-  <link rel="stylesheet" href="css/index.cart.css" />
-  <div id="cartIcon" style="display: none">
-    🛒
-    <div id="cartCount">0</div>
-  </div>
-
-  <section class="products">
-    <div
-      class="product"
-      data-id="1"
-      data-name="Metal Pet Brush"
-      data-price="5"
-      data-image="metal-brush.png"
-    >
-      <img
-        src="./assets/images/metal-brush.png"
-        alt="Metal Pet Brush"
-        style="width: 250px"
-      />
-      <h3>Metal Brush</h3>
-      <span class="item-price">5.00</span>
-      <button class="addToCartBtn">Add to Cart</button>
+    <link rel="stylesheet" href="css/index.cart.css"/>
+    <div id="cartIcon" style="display: none">
+        🛒
+        <div id="cartCount">0</div>
     </div>
 
-    <div
-      class="product"
-      data-id="2"
-      data-name="AGA Rope Toy"
-      data-price="5"
-      data-image="kittens.png"
-    >
-      <img
-        src="./assets/images/kittens.png"
-        alt="Kitten's Heaven Set"
-        style="width: 250px"
-      />
-      <h3>Kitten's Heaven Set</h3>
-      <span class="item-price">7.00</span>
-      <button class="addToCartBtn">Add to Cart</button>
+    <section class="products">
+        <div
+                class="product"
+                data-id="1"
+                data-name="Metal Pet Brush"
+                data-price="5"
+                data-image="metal-brush.png"
+        >
+            <img
+                    src="./assets/images/metal-brush.png"
+                    alt="Metal Pet Brush"
+                    style="width: 250px"
+            />
+            <h3>Metal Brush</h3>
+            <span class="item-price">5.00</span>
+            <button class="addToCartBtn">Add to Cart</button>
+        </div>
+
+        <div
+                class="product"
+                data-id="2"
+                data-name="AGA Rope Toy"
+                data-price="5"
+                data-image="kittens.png"
+        >
+            <img
+                    src="./assets/images/kittens.png"
+                    alt="Kitten's Heaven Set"
+                    style="width: 250px"
+            />
+            <h3>Kitten's Heaven Set</h3>
+            <span class="item-price">7.00</span>
+            <button class="addToCartBtn">Add to Cart</button>
+        </div>
+    </section>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span id="closeCart">&times;</span>
+            <h2>Shopping cart</h2>
+            <div id="emptyMessage" style="display: none">Shopping cart is empty</div>
+
+            <div id="cartItems"></div>
+            <p><strong>Total:</strong>$<span id="cartTotal">0,00</span></p>
+            <form id="orderForm" class="order-form">
+                <label for="text">Name</label>
+                <input type="text" id="text" placeholder="Your name" required/>
+
+                <label for="email">Email</label>
+                <input
+                        type="email"
+                        id="email"
+                        placeholder="Your email address"
+                        onchange="changeQuantity(1, this.value)"
+                        value="1"
+                        required
+                />
+
+                <label for="phone">Phone</label>
+                <input type="phone" id="phone" placeholder="Your phone" required/>
+
+                <label for="comment">Comment</label>
+                <input
+                        type="comment"
+                        id="comment"
+                        placeholder="Your comment"
+                        required
+                />
+            </form>
+            <button id="orderBtn" class="order-btn">Order</button>
+        </div>
     </div>
-  </section>
 
-  <div id="cartModal" class="modal">
-    <div class="modal-content">
-      <span id="closeCart">&times;</span>
-      <h2>Shopping cart</h2>
-      <div id="emptyMessage" style="display: none">Shopping cart is empty</div>
-
-      <div id="cartItems"></div>
-      <p><strong>Total:</strong>$<span id="cartTotal">0,00</span></p>
-      <form id="orderForm" class="order-form">
-        <label for="text">Name</label>
-        <input type="text" id="text" placeholder="Your name" required />
-
-        <label for="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          placeholder="Your email address"
-          onchange="changeQuantity(1, this.value)"
-          value="1"
-          required
-        />
-
-        <label for="phone">Phone</label>
-        <input type="phone" id="phone" placeholder="Your phone" required />
-
-        <label for="comment">Comment</label>
-        <input
-          type="comment"
-          id="comment"
-          placeholder="Your comment"
-          required
-        />
-      </form>
-      <button id="orderBtn" class="order-btn">Order</button>
-    </div>
-  </div>
-
-  <script src="js/index.cart.js"></script>
+    <script src="js/index.cart.js"></script>
 </section>

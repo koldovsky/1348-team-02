@@ -15,13 +15,15 @@
     width: 300px;
     text-align: left;
 }
+
 .order-form {
     display: flex;
     flex-direction: column;
-    gap: 10px; 
+    gap: 10px;
     width: 300px;
     margin: auto;
 }
+
 .order-btn {
     background-color: #ff6600;
     color: white;

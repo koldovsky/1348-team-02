@@ -1,0 +1,115 @@
+.carousel-products {
+    padding: 0px 24px;
+    align-items: center;
+    justify-content: center;
+
+    .carousel-products__title {
+        text-align: center;
+        font-family: var(--title-font);
+        font-size: 30px;
+        color: var(--title-color);
+        margin: 5px;
+
+
+        @media (min-width: 768px) {
+            font-size: 44px;
+        }
+
+        @media (min-width: 992px) {
+            font-size: 50px;
+        }
+    }
+
+    .bon-icon {
+        width: 70px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .carousel-products-subtitle {
+        font-size: 19px;
+        color: var(--description-color);
+        font-family: var(--body-font);
+        text-align: center;
+    }
+
+    .carousel-products-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+        overflow: hidden;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        position: relative;
+
+        @media (min-width: 767px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (min-width: 991px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .carousel-products-item {
+            border: 2px solid #ffe6d4;
+            margin: 15px;
+            padding: 25px;
+
+            @media (min-width: 992px) {
+                margin: 0;
+                padding: 25px;
+            }
+            @media (min-width: 1440px) {
+                margin: -2px;
+                padding: 25px;
+            }
+
+            .carousel-products-img-animal {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+
+                @media (min-width: 768px) {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+
+            .carousel-products-item-title {
+                font-size: 22px;
+                font-family: var(--title-font);
+                color: var(--title-color);
+
+                @media (min-width: 768px) {
+                    font-size: 23px;
+                }
+
+                @media (min-width: 992px) {
+                    font-size: 24px;
+                }
+
+                .carousel-products-item-title-arrow-right {
+                    font-size: 22px;
+                    font-family: var(--title-font);
+                    color: var(--arrow-color);
+
+                    @media (min-width: 768px) {
+                        font-size: 23px;
+                    }
+
+                    @media (min-width: 992px) {
+                        font-size: 24px;
+                    }
+                }
+            }
+
+            .carousel-products-description {
+                font-size: 15px;
+                font-family: var(--body-font);
+                color: var(--description-color);
+                text-align: center;
+            }
+        }
+    }
+}

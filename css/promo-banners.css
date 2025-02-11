@@ -4,6 +4,11 @@
     gap: 50px;
     padding: 60px 24px;
 
+    @media (min-width: 761px) {
+        grid-template-columns: repeat(2, 1fr);
+        min-width: 80%;
+    }
+
     .promo-banners-item {
         position: relative;
         overflow: hidden;
@@ -26,6 +31,18 @@
     }
 
     .promo-banners-item-title {
+        font-size: 28px;
+        font-weight: bold;
+        margin: 20px 0;
+        font-family: var(--title-font);
+        color: var(--title-color);
+
+        @media (min-width: 770px) {
+            font-size: 35px;
+        }
+    }
+
+    .discount {
         font-size: 28px;
         font-weight: bold;
         margin: 20px 0;
@@ -73,12 +90,5 @@
 
     .promo-banners-item-button:hover {
         background: #f4c7a5;
-    }
-}
-
-@media (min-width: 761px) {
-    .promo-banners-container {
-        grid-template-columns: repeat(2, 1fr);
-        min-width: 80%;
     }
 }
