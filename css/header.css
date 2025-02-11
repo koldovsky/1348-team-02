@@ -83,14 +83,14 @@ body {
  
 }
 .headrer-navigation-link::after{
-  background: black;
+  background: rgba(0, 0, 0, 0.8);
   bottom: -6px;
   content: "";
   height: 2px;
   left: 0;
  transform: scaleX(1);
   position: absolute;
-  transition: transform .35s ease, width .4s ease-out;
+  transition: transform .35s ease, width .35s ease-out;
   width: 0%;
 }
 .headrer-navigation-link:hover{
