@@ -7,11 +7,11 @@
     <title>Pet Store</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" type="image/x-icon" href="assets/images/global/favicon.ico"/>
+    <link rel="stylesheet" href="css/index.css">
     <script
             src="https://unpkg.com/htmx.org@1.9.10"
             integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
             crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 <!--Andew Kozak-->
@@ -76,6 +76,11 @@
             data-hx-get="index.cart.partial.html"
     ></section>
 </main>
-<footer></footer>
+  <!-- Serhii Kandyba -->
+  <footer
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.footer.partial.html"
+  ></footer>
 </body>
 </html>

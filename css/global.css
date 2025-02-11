@@ -2,15 +2,29 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-    --title-font: "Baloo 2", cursive;
-    --body-font: "PT Sans", sans-serif;
-    font-family: var(--body-font);
-    --title-color: rgb(60, 55, 49);
-    --body-color: rgb(60, 55, 49);
-    --price-color: rgb(237, 100, 53);
-    --arrow-color: rgb(69, 193, 199);
-    --description-color: rgb(149, 139, 126);
-    scroll-behavior: smooth;
+  --white: #fff;
+  --secondary: #958b7e;
+  --font-size-base: 16px;
+  --line-height-base: 18px;
+  --title-font: "Baloo 2", cursive;
+  --body-font: "PT Sans", sans-serif;
+  --title-color: rgb(60, 55, 49);
+  --body-color: rgb(60, 55, 49);
+  --price-color: rgb(237, 100, 53);
+  --arrow-color: rgb(69, 193, 199);
+  --description-color: rgb(149, 139, 126);
+  --base-min-width: 320px;
+}
+
+body {
+  color: var(--secondary);
+  background: var(--white);
+  font: var(--font-size-base)/var(--line-height-base) var(--body-font);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  min-width: var(--base-min-width);
 }
 
 a {

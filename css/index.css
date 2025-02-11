@@ -1,6 +1,8 @@
+@import "./reset.css";
 @import "./global.css";
 @import "./index.cart.css";
 @import "./header.css";
 @import "./index.our-shop.css";
 @import "./promo-banners.css";
 @import "./carousel-products.css";
+@import "./index.footer.css";
