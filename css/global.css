@@ -1,42 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-
 :root {
-  /* Typography */
-  --font-primary: "PT Sans", sans-serif;  /* Body font */
-  --font-secondary: "Baloo 2", cursive;   /* Title font */
-  --font-size-base: 16px;
-  --line-height-base: 18px;
+    /* Typography */
+    --font-primary: "PT Sans", sans-serif; /* Body font */
+    --font-secondary: "Baloo 2", cursive; /* Title font */
+    --font-size-base: 16px;
+    --line-height-base: 18px;
 
-  /* Colors: Primary Palette */
-  --color-primary: #45c1c7;    /* Arrow color, interactive elements */
-  --color-secondary: #ed6435;  /* Price color, CTA elements */
+    /* Colors: Primary Palette */
+    --color-primary: #45c1c7; /* Arrow color, interactive elements */
+    --color-secondary: #ed6435; /* Price color, CTA elements */
 
-  /* Colors: Text */
-  --color-text-primary: rgb(60, 55, 49);    /* Title and body text */
-  --color-text-secondary: rgb(149, 139, 126); /* Description text */
-  --color-text-muted: rgb(154, 152, 152);    /* Muted text elements */
-  --white: #fff;                             /* White text */
+    /* Colors: Text */
+    --color-text-primary: rgb(60, 55, 49); /* Title and body text */
+    --color-text-secondary: rgb(149, 139, 126); /* Description text */
+    --color-text-muted: rgb(154, 152, 152); /* Muted text elements */
+    --white: #fff; /* White text */
 
-  /* Colors: Background */
-  --color-bg-main: rgb(250, 244, 242);     /* Main background */
-  --color-bg-input: rgb(244, 230, 226);    /* Input fields */
-  --color-bg-button: rgb(255, 230, 212);   /* Button background */
-  --color-bg-bottom: rgb(242, 232, 228);   /* Bottom section */
+    /* Colors: Background */
+    --color-bg-main: rgb(250, 244, 242); /* Main background */
+    --color-bg-input: rgb(244, 230, 226); /* Input fields */
+    --color-bg-button: rgb(255, 230, 212); /* Button background */
+    --color-bg-bottom: rgb(242, 232, 228); /* Bottom section */
 
-  /* Layout */
-  --base-min-width: 320px;  /* Minimum viewport width */
+    /* Layout */
+    --base-min-width: 320px; /* Minimum viewport width */
 }
 
 body {
-  color: var(--color-text-primary);
-  background: var(--white);
-  <!--font: var(--font-size-base)/var(--line-height-base) var(--font-primary);-->
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
-  min-width: var(--base-min-width);
+    color: var(--color-text-primary);
+    background: var(--white);
+    /*font: var(--font-size-base) / var(--line-height-base) var(--font-primary);*/
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    min-width: var(--base-min-width);
 }
 
 a {
