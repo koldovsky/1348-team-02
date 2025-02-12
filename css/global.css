@@ -19,7 +19,7 @@
 body {
   color: var(--secondary);
   background: var(--white);
-  font: var(--font-size-base)/var(--line-height-base) var(--body-font);
+  <!--font: var(--font-size-base)/var(--line-height-base) var(--body-font);-->
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
