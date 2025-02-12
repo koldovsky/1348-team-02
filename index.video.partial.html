@@ -3,11 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video</title>
+    <title>Pet Video & Promo</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f8f8f8;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .video-section {
+            flex: 1;
+            position: relative;
+            min-width: 300px;
+        }
+        .video-section img {
+            width: 100%;
+            display: block;
+        }
+        .video-section iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .promo-section {
+            flex: 1;
+            background: #fde4e4;
+            padding: 20px;
+            min-width: 300px;
+        }
+        .promo-section h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .promo-section ul {
+            list-style: none;
+            margin: 10px 0;
+        }
+        .promo-section ul li {
+            padding: 5px 0;
+            color: #d9534f;
+        }
+        .promo-images {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .promo-images img {
+            width: 100px;
+            height: auto;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div style="position: relative; width: 640px; height: 480px;"><img src="https://res2.weblium.site/res/60ab502967fbc80021ebe4fb/60ae4e61db8b27002189800e_optimized?nowebp" alt="Video Thumbnail" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1;"><iframe width="640" height="480" src="https://www.youtube.com/embed/tIXP_37UU3M?si=_mpfoZ7mX1osquV_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="z-index: 2;"></iframe></div>
+    <div class="container">
+        <div class="video-section">
+            <img src="https://res2.weblium.site/res/60ab502967fbc80021ebe4fb/60ae4e61db8b27002189800e_optimized?nowebp" alt="Video Thumbnail">
+            <iframe src="https://www.youtube.com/embed/tIXP_37UU3M?si=_mpfoZ7mX1osquV_" allowfullscreen></iframe>
+        </div>
+        <div class="promo-section">
+            <h2>Best Producers of Food for Dogs</h2>
+            <p>Discover Now →</p>
+            <ul>
+                <li>WOOF</li>
+                <li>Cat Daily</li>
+                <li>Fish Planet</li>
+            </ul>
+            <div class="promo-images">
+                <img src="https://res2.weblium.site/res/60ab502967fbc80021ebe4fb/60b0db244a36d3002191aa13_optimized?nowebp" alt="Turkey Pate">
+                <img src="https://res2.weblium.site/res/60ab502967fbc80021ebe4fb/60b0db244a36d3002191aa13_optimized?nowebp" alt="Natural Chicken">
+            </div>
+        </div>
+    </div>
 </body>
- <h1>HTML</h1>
- <Img src=https://res2.weblium.site/res/60ab502967fbc80021ebe4fb/60b0db244a36d3002191aa13_optimized?nowebp>
 </html>
