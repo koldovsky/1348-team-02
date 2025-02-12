@@ -3,10 +3,11 @@
     grid-template-columns: 1fr;
     gap: 50px;
     padding: 60px 24px;
+    margin: 0 auto;
 
     @media (min-width: 761px) {
         grid-template-columns: repeat(2, 1fr);
-        min-width: 570px;
+        max-width: 1570px;
     }
 
     .promo-banners-item {
