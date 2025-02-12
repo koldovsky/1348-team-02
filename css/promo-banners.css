@@ -89,6 +89,6 @@
     }
 
     .promo-banners-item-button:hover {
-        background: #f4c7a5;
+        background: var(--color-bg-button);
     }
 }
