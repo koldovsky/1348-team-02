@@ -5,9 +5,9 @@
 
     .carousel-products__title {
         text-align: center;
-        font-family: var(--title-font);
+        font-family: var(--font-secondary);
         font-size: 30px;
-        color: var(--title-color);
+        color: var(--color-text-primary);
         margin: 5px;
 
 
@@ -28,8 +28,8 @@
 
     .carousel-products-subtitle {
         font-size: 19px;
-        color: var(--description-color);
-        font-family: var(--body-font);
+        color: var(--color-text-muted);
+        font-family: var(--font-primary);
         text-align: center;
     }
 
@@ -78,8 +78,8 @@
 
             .carousel-products-item-title {
                 font-size: 22px;
-                font-family: var(--title-font);
-                color: var(--title-color);
+                font-family: var(--font-secondary);
+                color: var(--color-text-primary);
 
                 @media (min-width: 768px) {
                     font-size: 23px;
@@ -91,8 +91,8 @@
 
                 .carousel-products-item-title-arrow-right {
                     font-size: 22px;
-                    font-family: var(--title-font);
-                    color: var(--arrow-color);
+                    font-family: var(--font-primary);
+                    color: var(--color-primary);
 
                     @media (min-width: 768px) {
                         font-size: 23px;
@@ -106,8 +106,8 @@
 
             .carousel-products-description {
                 font-size: 15px;
-                font-family: var(--body-font);
-                color: var(--description-color);
+                font-family: var(--font-primary);
+                color: var(--color-text-muted);
                 text-align: center;
             }
         }
