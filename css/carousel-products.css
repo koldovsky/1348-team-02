@@ -52,7 +52,7 @@
         }
 
         .carousel-products-item {
-            border: 2px solid #ffe6d4;
+            border: 2px solid var(--color-bg-button);
             margin: 15px;
             padding: 25px;
 
