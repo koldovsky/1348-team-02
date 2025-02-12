@@ -1,0 +1,88 @@
+.testimonials__header {
+  font-size: 30px;
+  font-family: "Baloo 2", cursive;
+  color: #3c3731;
+  text-align: center;
+  line-height: 1.2;
+}
+.testimonials {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.testimonials__internal {
+  min-width: 320px;
+  width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.testimonials__delimiter {
+  display: grid;
+  justify-items: center;
+  margin-top: 25px;
+}
+.testimonials__delimiter_image {
+  height: 32px;
+}
+.testimonials__subheader {
+  margin-top: 20px;
+  font-family: "PT Sans", sanf-serif;
+  font-size: 18px;
+  color: #958b7e;
+  text-align: center;
+  line-height: 25.9992px;
+  overflow-wrap: break-word;
+}
+.testimonials__carousel_track-container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.testimonials__carousel_slide {
+  border: 1.6px solid #ffe6d4;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 33px;
+  padding-bottom: 33px;
+  display: grid;
+  justify-items: center;
+}
+.testimonials__carousel_slide_image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.testimonials__carousel_slide_name {
+  margin-top: 20px;
+  font-family: "Baloo 2", cursive;
+  color: #3c3731;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+}
+.testimonials__carousel_slide_pet_name {
+  margin-top: 20px;
+  font-family: "PT Sans", sans-serif;
+  color: #ed6435;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+}
+.testimonials__carousel_slide_message {
+  margin-top: 20px;
+  font-family: "PT Sans", sans-serif;
+  color: #8e8e8e;
+  font-size: 17px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  line-height: 27.2px;
+}
+.testimonials__carousel_slide_date {
+  margin-top: 20px;
+  font-family: "PT Sans", sans-serif;
+  color: #3c3731;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 21.4275px;
+}
