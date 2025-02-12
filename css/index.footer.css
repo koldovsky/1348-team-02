@@ -392,6 +392,12 @@
   .footer__contacts-phone__link {
     font-size: 36px;
   }
+
+  .footer__contacts-item:first-child {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
+  }
 }
 
 @media (min-width: 1200px) {
