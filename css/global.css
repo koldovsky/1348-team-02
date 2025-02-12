@@ -1,23 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 
 :root {
-  --white: #fff;
-  --secondary: #958b7e;
+  /* Typography */
+  --font-primary: "PT Sans", sans-serif;  /* Body font */
+  --font-secondary: "Baloo 2", cursive;   /* Title font */
   --font-size-base: 16px;
   --line-height-base: 18px;
-  --title-font: "Baloo 2", cursive;
-  --body-font: "PT Sans", sans-serif;
-  --title-color: rgb(60, 55, 49);
-  --body-color: rgb(60, 55, 49);
-  --price-color: rgb(237, 100, 53);
-  --arrow-color: rgb(69, 193, 199);
-  --description-color: rgb(149, 139, 126);
-  --base-min-width: 320px;
+
+  /* Colors: Primary Palette */
+  --color-primary: #45c1c7;    /* Arrow color, interactive elements */
+  --color-secondary: #ed6435;  /* Price color, CTA elements */
+
+  /* Colors: Text */
+  --color-text-primary: rgb(60, 55, 49);    /* Title and body text */
+  --color-text-secondary: rgb(149, 139, 126); /* Description text */
+  --color-text-muted: rgb(154, 152, 152);    /* Muted text elements */
+  --white: #fff;                             /* White text */
+
+  /* Colors: Background */
+  --color-bg-main: rgb(250, 244, 242);     /* Main background */
+  --color-bg-input: rgb(244, 230, 226);    /* Input fields */
+  --color-bg-button: rgb(255, 230, 212);   /* Button background */
+  --color-bg-bottom: rgb(242, 232, 228);   /* Bottom section */
+
+  /* Layout */
+  --base-min-width: 320px;  /* Minimum viewport width */
 }
 
 body {
-  color: var(--secondary);
+  color: var(--color-text-primary);
   background: var(--white);
   <!--font: var(--font-size-base)/var(--line-height-base) var(--body-font);-->
   text-rendering: optimizeLegibility;
