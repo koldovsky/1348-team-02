@@ -10,7 +10,6 @@
         color: var(--color-text-primary);
         margin: 5px;
 
-
         @media (min-width: 768px) {
             font-size: 44px;
         }
