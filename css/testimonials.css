@@ -45,6 +45,7 @@
   padding-bottom: 33px;
   display: grid;
   justify-items: center;
+  max-width: 320px;
 }
 .testimonials__carousel_slide_image {
   width: 70px;
@@ -85,4 +86,8 @@
   font-weight: 400;
   text-align: center;
   line-height: 21.4275px;
+}
+.testimonials__items {
+  justify-items: center;
+  display: grid;
 }
