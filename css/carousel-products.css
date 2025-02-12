@@ -121,7 +121,8 @@
                 max-width: 300px;
                 padding: 25px;
             }
-            @media (min-width: 1440px) {
+
+            @media (min-width: 1024px) {
                 margin: 0 auto;
                 padding: 25px;
             }
