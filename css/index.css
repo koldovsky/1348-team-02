@@ -2,14 +2,7 @@
 @import "./global.css";
 @import "./index.cart.css";
 @import "./header.css";
+@import "./promotion.partial.css";
 @import "./index.our-shop.css";
 @import "./promo-banners.css";
-<<<<<<< HEAD
-@import "./promotion.partial.css";
-=======
-@import "./carousel-promo.css";
-@import "./carousel-products.css";
-@import "./index.footer.css";
-@import "./index.carousel-new-arrivals.css";
-@import "./testimonials.css";
->>>>>>> bcc3171730f4eba22d97db2333710418d1f5d583
+
