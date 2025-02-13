@@ -7,6 +7,7 @@
     --title-color: rgb(60, 55, 49);
     --body-color: rgb(60, 55, 49);
     --price-color: rgb(237, 100, 53);
+    --promotion-color: rgb(69, 193, 199);
     scroll-behavior: smooth;
 }
 a{
