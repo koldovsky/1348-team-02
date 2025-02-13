@@ -22,7 +22,7 @@
     font-size: 14px;
     font-weight: 600;
     width: 100%;
-    padding: 5px 15px;
+    padding: 5px 30px;
   }
   
   .contact-email-phone {
@@ -48,7 +48,7 @@
   .logo-style {
     width: 182px;
     height: 33px;
-    padding: 5px 15px;
+    padding: 5px 0;
   }
   
   .backgroung-image {
@@ -129,6 +129,7 @@
   }
   
   .main-page {
+    padding: 0 30px;
     margin: auto;
     justify-content: center;
     color: var(--color-text-main);
@@ -136,7 +137,7 @@
   }
   
   .h1text {
-    padding: 0 15px;
+    
     font-size: 56px;
     font-family: "Baloo 2", sans-serif;
     line-height: 55px;
