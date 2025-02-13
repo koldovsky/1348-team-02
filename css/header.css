@@ -1,6 +1,4 @@
-* {
-  box-sizing: border-box;
-}
+
 
 body {
   margin: 0;
@@ -37,7 +35,9 @@ body {
   display: flex;
   gap: 15px;
 }
-
+.style-time-work{
+    font-size: 15px;
+}
 .style-contact {
   text-decoration: none;
   color: #ed6435;
@@ -102,7 +102,7 @@ body {
 .headrer-navigation-link {
   text-decoration: none;
   color: rgb(107, 107, 107);
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   transition: color 0.3s;
   position: relative;
