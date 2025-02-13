@@ -6,3 +6,10 @@
 @import "./promo-banners.css";
 @import "./carousel-products.css";
 @import "./index.footer.css";
+<<<<<<< HEAD
+@import "./index.carousel-new-arrivals.css"
+@import "./testimonials.css";
+=======
+@import "./index.carousel-new-arrivals.css";
+@import "./testimonials.css";
+>>>>>>> a82252b621f254767d974ddb38f376e3b29545a6

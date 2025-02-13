@@ -1,12 +1,21 @@
 <section class="testimonials">
     <div class="testimonials__internal">
         <h2 class="testimonials__header">Testimonials by Our Clients</h2>
-        <img src="./assets/images/delimiter.svg" class="testimonials__delimiter" alt="Bone"/>
+        <div class="testimonials__delimiter">
+            <img
+                    src="./assets/images/delimiter.svg"
+                    class="testimonials__delimiter_image"
+                    alt="Bone"
+            />
+        </div>
         <div class="testimonials__subheader">
             We're happy with each review you leave! Thank you for your trust.
         </div>
         <div class="testimonials__items">
             <div class="testimonials__carousel">
+                <button class="testimonials-carousel__button--left" type="button">
+                    ←
+                </button>
                 <div class="testimonials__carousel_track-container">
                     <ul class="testimonials__carousel_track">
                         <li class="testimonials__carousel_slide">
@@ -14,7 +23,6 @@
                                     src="./assets/images/testimonials/testimonials_photo_1.png"
                                     alt="Client photo"
                                     class="testimonials__carousel_slide_image"
-                                    width="120"
                             />
                             <div class="testimonials__carousel_slide_name">
                                 Douglas Wright
@@ -97,16 +105,7 @@
                         </li>
                     </ul>
                 </div>
-                <button
-                        class="testimonials-carousel__button--left"
-                        type="button"
-                >
-                    ←
-                </button>
-                <button
-                        class="testimonials-carousel__button--right"
-                        type="button"
-                >
+                <button class="testimonials-carousel__button--right" type="button">
                     →
                 </button>
             </div>

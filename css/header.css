@@ -1,16 +1,9 @@
 
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "PT Sans", sans-serif;
-}
-
 .header {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #f9f1eb;
+  background-color: var(--color-background);
 }
 
 .containers {
@@ -23,9 +16,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f9f1eb;
-  padding: 5px 15px;
-  color: #e0633c;
+  background-color: var(--color-background);
+  color: var(--color-primary);
   font-size: 14px;
   font-weight: 600;
   width: 100%;
@@ -34,13 +26,17 @@ body {
 .contact-email-phone {
   display: flex;
   gap: 15px;
+  padding: 5px 15px;
 }
-.style-time-work{
-    font-size: 15px;
+
+.style-time-work {
+  font-size: 15px;
+  padding: 5px 15px;
 }
+
 .style-contact {
   text-decoration: none;
-  color: #ed6435;
+  color: var(--color-secondary);
 }
 
 .style-contact:hover {
@@ -50,6 +46,7 @@ body {
 .logo-style {
   width: 182px;
   height: 33px;
+  padding: 5px 15px;
 }
 
 .backgroung-image {
@@ -68,14 +65,13 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 30px 15px;
+  padding: 30px;
 }
 
 .headrer-navigation {
   display: flex;
   list-style: none;
   gap: 20px;
-  padding: 0;
   margin: 0;
 }
 
@@ -92,7 +88,7 @@ body {
 }
 
 .headrer-navigation-link:hover {
-  color: black;
+  color: var(--color-hover);
 }
 
 .headrer-navigation-link:hover::after {
@@ -101,7 +97,7 @@ body {
 
 .headrer-navigation-link {
   text-decoration: none;
-  color: rgb(107, 107, 107);
+  color: var(--color-text-muted);
   font-size: 15px;
   font-weight: bold;
   transition: color 0.3s;
@@ -109,7 +105,7 @@ body {
 }
 
 .headrer-navigation-link:hover {
-  color: #e76f4a;
+  color: var(--color-primary);
 }
 
 .media-icon {
@@ -121,23 +117,23 @@ body {
   display: flex;
   list-style: none;
   gap: 15px;
-  padding: 0;
+  padding: 5px 15px;
   margin: 0;
 }
 
 svg {
-  fill: #45c1c7;
+  fill: var(--color-accent);
   transition: all 0.3s ease;
 }
 
 svg:hover {
-  fill: #278388;
+  fill: var(--color-accent-hover);
 }
 
 .main-page {
   margin: auto;
   justify-content: center;
-  color: #3c3731;
+  color: var(--color-text-primary);
   position: relative;
 }
 
@@ -151,7 +147,7 @@ svg:hover {
 .style-text-header {
   font-size: 19px;
   font-family: "PT Sans", sans-serif;
-  color: #958b7e;
+  color: var(--color-text-secondary);
 }
 
 .btn-style {
@@ -166,25 +162,25 @@ svg:hover {
 }
 
 .btn-about {
-  background-color: #ffe8da;
-  color: rgb(237, 100, 53);
+  background-color: var(--color-btn-bg);
+  color: var(--color-secondary);
   border: none;
 }
 
 .btn-categories {
-  color: #45c1c7;
-  border: 2px solid #45c1c7;
+  color: var(--color-accent);
+  border: 2px solid var(--color-accent);
   background-color: transparent;
 }
 
 .btn-categories:hover {
   color: white;
-  background-color: #45c1c7;
+  background-color: var(--color-accent);
 }
 
 .btn-about:hover {
-  background-color: #a9f3f7;
-  color: #45c1c7;
+  background-color: var(--color-btn-hover);
+  color: var(--color-accent);
   border: none;
 }
 
