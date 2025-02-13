@@ -33,7 +33,7 @@
   
   .style-time-work {
     font-size: 15px;
-    padding: 5px 15px;
+    padding-left: 15px;
   }
   
   .style-contact {
@@ -48,7 +48,6 @@
   .logo-style {
     width: 182px;
     height: 33px;
-    padding: 5px 0;
   }
   
   .backgroung-image {
