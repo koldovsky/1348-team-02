@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Pet Store</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="icon" type="image/x-icon" href="assets/images/global/favicon.ico"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link
+            rel="icon"
+            type="image/x-icon"
+            href="assets/images/global/favicon.ico"
+    />
+    <link rel="stylesheet" href="css/index.css"/>
     <script
             src="https://unpkg.com/htmx.org@1.9.10"
             integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-            crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/index.css">
+            crossorigin="anonymous"
+    ></script>
 </head>
 <body>
 <!--Andew Kozak-->
@@ -24,9 +29,16 @@
 </header>
 <main>
     <!-- Vitalii Maletych -->
-    <section data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="index.promo-banners.partial.html"></section>
-    <section data-hx-trigger="load" data-hx-swap="outerHTML"
-             data-hx-get="index.carousel-products.partial.html"></section>
+    <section
+            data-hx-trigger="load"
+            data-hx-swap="outerHTML"
+            data-hx-get="index.promo-banners.partial.html"
+    ></section>
+    <section
+            data-hx-trigger="load"
+            data-hx-swap="outerHTML"
+            data-hx-get="index.carousel-products.partial.html"
+    ></section>
     <!-- Nataliia Karkhut -->
     <section
             data-hx-trigger="load"
@@ -38,6 +50,18 @@
             data-hx-trigger="load"
             data-hx-swap="outerHTML"
             data-hx-get="index.carousel-promo.partial.html"
+    ></section>
+    <!-- Margo Matskevych -->
+    <section
+            data-hx-trigger="load"
+            data-hx-swap="outerHTML"
+            data-hx-get="index.cart.partial.html"
+    ></section>
+    <!-- Oleksandr Vasylovych-->
+    <section
+            data-hx-trigger="load"
+            data-hx-swap="outerHTML"
+            data-hx-get="index.carousel-new-arrivals.partial.html"
     ></section>
     <!-- Melnyk Vlad -->
     <section
@@ -63,19 +87,12 @@
             data-hx-swap="outerHTML"
             data-hx-get="index.food.partial.html"
     ></section>
-    <!-- Oleksandr Vasylovych-->
-    <section
-            data-hx-trigger="load"
-            data-hx-swap="outerHTML"
-            data-hx-get="index.carousel-new-arrivals.partial.html"
-    ></section>
-    <!-- Margo Matskevych -->
-    <section
-            data-hx-trigger="load"
-            data-hx-swap="outerHTML"
-            data-hx-get="index.cart.partial.html"
-    ></section>
 </main>
-<footer></footer>
+<!-- Serhii Kandyba -->
+<footer
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.footer.partial.html"
+></footer>
 </body>
 </html>
