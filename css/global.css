@@ -26,17 +26,18 @@
     /* Layout */
     --base-min-width: 320px; /* Minimum viewport width */
     /*Color for header*/
-    --color-brand-primary: #e0633c;
-    --color-brand-secondary: #ed6435;
-    --color-accent: #45c1c7;
-    --color-accent-hover: #278388;
-    --color-background: #f9f1eb;
-    --color-text-primary: #3c3731;
+    --color-bg-main: #f9f1eb;
+    --color-text-main: #3c3731;
     --color-text-secondary: #958b7e;
     --color-text-muted: rgb(107, 107, 107);
-    --color-hover: black;
+    --color-accent-main: #e76f4a;
+    --color-accent-hover: #e0633c;
+    --color-link: #ed6435;
+    --color-link-hover: black;
     --color-btn-bg: #ffe8da;
     --color-btn-hover: #a9f3f7;
+    --color-border: #45c1c7;
+    --color-border-hover: #278388;
 }
 
 body {
