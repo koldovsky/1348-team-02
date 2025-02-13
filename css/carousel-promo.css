@@ -1,0 +1,251 @@
+.promo {
+  padding: 90px 0;
+  background-color: var(--color-bg-main);
+
+  .promo__container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+  }
+
+  .promo__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 272px;
+    justify-content: center;
+    width: 100%;
+    padding: 30px 20px;
+
+    @media (min-width: 768px) {
+      align-items: flex-start;
+      text-align: left;
+      padding: 60px 40px;
+    }
+  }
+
+  .promo__item--aquarium {
+    background-image: url("../assets/images/carousel-promo/promo-fishes.png");
+    background-color: var(--white);
+  }
+
+  .promo__item--pets {
+    background-image: url("../assets/images/carousel-promo/promo-instruments.png");
+    background-color: var(--color-bg-light-blue);
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .promo__title {
+    max-width: 220px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: var(--font-secondary);
+    color: var(--color-text-primary);
+    line-height: 1.2;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+  }
+
+  .promo__discount {
+    color: var(--color-secondary);
+  }
+
+  .promo__subtitle {
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
+
+  .promo__price {
+    font-size: var(--font-size-base);
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-style: italic;
+  }
+
+  .promo__price-text {
+    color: var(--color-text-secondary);
+  }
+
+  .promo__price-value {
+    color: var(--color-secondary);
+    font-weight: bold;
+  }
+
+  .promo__link {
+    margin-top: 25px;
+    font-size: var(--font-size-base);
+    color: var(--color-text-primary);
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+
+    &:hover {
+      text-decoration: underline;
+      color: var(--color-secondary);
+    }
+  }
+
+  .promo__button {
+    margin-top: 25px;
+    font-size: var(--font-size-base);
+    color: var(--color-secondary);
+    text-decoration: none;
+    padding: 10px 25px;
+    transition: background-color 0.3s ease, color 0.3s ease,
+      box-shadow 0.3s ease;
+    display: inline-block;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    border: 1px solid var(--color-secondary);
+    border-radius: 50px;
+    background-color: transparent;
+    text-align: center;
+
+    &:hover {
+      background-color: var(--color-secondary);
+      color: var(--white);
+      text-decoration: none;
+    }
+  }
+
+  .promo__brands {
+    margin-top: 40px;
+    text-align: center;
+    overflow: hidden;
+
+    .promo__carousel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px;
+      overflow-x: auto;
+      position: relative;
+      scrollbar-width: none;
+      scroll-snap-type: x mandatory;
+    }
+
+    .promo__brand {
+      flex: 0 0 100%;
+      max-width: 242px;
+      height: 141px;
+      background-color: var(--color-bg-button);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: transform 0.3s ease;
+    }
+
+    /* Show 3 brands on tablets */
+    @media (min-width: 768px) {
+      .promo__brand {
+        flex: 0 0 calc(100% / 3);
+        max-width: 240px;
+      }
+    }
+
+    /* Show all brands in one row on desktop */
+    @media (min-width: 1024px) {
+      .promo__brand {
+        flex: 0 0 calc(100% / 6);
+        max-width: 160px;
+      }
+    }
+
+    .promo__brand--applaws {
+      background-image: url("../assets/images/carousel-promo/applaws.png");
+    }
+
+    .promo__brand--tigerino {
+      background-image: url("../assets/images/carousel-promo/tigerino.webp");
+    }
+
+    .promo__brand--gourmet {
+      background-image: url("../assets/images/carousel-promo/gourmet.png");
+    }
+
+    .promo__brand--felix {
+      background-image: url("../assets/images/carousel-promo/felix.webp");
+    }
+
+    .promo__brand--purizon {
+      background-image: url("../assets/images/carousel-promo/purizon.png");
+    }
+
+    .promo__brand--rocco {
+      background-image: url("../assets/images/carousel-promo/rocco.png");
+    }
+  }
+
+  .promo__arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background: var(--color-text-primary);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 18px;
+    border: none;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 8px;
+      height: 8px;
+      border-right: 1px solid white;
+      border-top: 1px solid white;
+      transform: rotate(45deg);
+    }
+  }
+
+  .promo__arrow--left {
+    left: 10px;
+
+    &::before {
+      transform: rotate(-135deg);
+    }
+
+    @media (max-width: 768px) {
+      left: 20px;
+    }
+  }
+
+  .promo__arrow--right {
+    right: 10px;
+
+    @media (max-width: 768px) {
+      right: 20px;
+    }
+  }
+}
