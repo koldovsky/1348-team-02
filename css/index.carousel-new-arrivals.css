@@ -1,0 +1,28 @@
+.carousel-new-arrivals {
+  padding: 0px 24px;
+  align-items: center;
+  justify-content: center;
+
+  .carousel-new-arrivals__title {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-family: var(--secondary-font);
+    color: var(--color-text-primary);
+  }
+  .carousel-new-arrivals__image {
+    width: 70px;
+    display: block;
+    margin: 0 auto;
+  }
+  .carousel-new-arrivals__description{
+    font-size: 19px;
+    text-align: center;
+    color:var(--color-text-secondary) ;
+    font-family: var(--font-primary);
+    font-weight:300;
+  }
+  .carousel-new-arrivals__items{
+    display: flex;
+  }
+}

@@ -3,10 +3,11 @@
     grid-template-columns: 1fr;
     gap: 50px;
     padding: 60px 24px;
+    margin: 0 auto;
 
     @media (min-width: 761px) {
         grid-template-columns: repeat(2, 1fr);
-        min-width: 80%;
+        max-width: 1570px;
     }
 
     .promo-banners-item {
@@ -25,8 +26,8 @@
     .promo_brands {
         font-size: 14px;
         font-weight: 700;
-        color: var(--price-color);
-        font-family: var(--body-font);
+        color: var(--color-secondary);
+        font-family: var(--font-primary);
         margin-bottom: 10px;
     }
 
@@ -34,8 +35,8 @@
         font-size: 28px;
         font-weight: bold;
         margin: 20px 0;
-        font-family: var(--title-font);
-        color: var(--title-color);
+        font-family: var(--font-secondary);
+        color: var(--color-text-primary);
 
         @media (min-width: 770px) {
             font-size: 35px;
@@ -46,8 +47,8 @@
         font-size: 28px;
         font-weight: bold;
         margin: 20px 0;
-        font-family: var(--title-font);
-        color: var(--title-color);
+        font-family: var(--font-secondary);
+        color: var(--color-text-primary);
     }
 
     .promo-banners-item-button {
@@ -58,9 +59,9 @@
         font-weight: 700;
         cursor: pointer;
         transition: 0.3s;
-        color: var(--price-color);
-        font-family: var(--body-font);
-        margin-top: 20px;
+        color: var(--color-secondary);
+        font-family: var(--font-primary);
+        margin-top: -2px;
         padding: 15px 38px;
     }
 
@@ -75,7 +76,7 @@
     }
 
     .promo-highlight {
-        color: var(--price-color);
+        color: var(--color-secondary);
     }
 
     .promo-banners-item:nth-child(2) {
@@ -89,6 +90,6 @@
     }
 
     .promo-banners-item-button:hover {
-        background: #f4c7a5;
+        background: var(--color-bg-button);
     }
 }
