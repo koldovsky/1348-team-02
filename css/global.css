@@ -8,6 +8,10 @@
     --body-color: rgb(60, 55, 49);
     --price-color: rgb(237, 100, 53);
     --promotion-color: rgb(69, 193, 199);
+    --subtitle-color: rgb(149, 139, 126);
+    --slide-border-color: rgb(255, 230, 212);
+    --slide-pet-nane-color:rgb(221, 102, 68);
+    --slide-message-color:rgb(142, 142, 142);
     scroll-behavior: smooth;
     min-width: var(--base-min-width);
     margin: 0;
