@@ -1,0 +1,143 @@
+/* Trending Products Section */
+.trending-products {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section-header h2 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.section-header .subheader {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 40px;
+    font-weight: 400;
+}
+
+/* Carousel Container */
+.carousel-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* Carousel Wrapper */
+.carousel-wrapper {
+    display: flex;
+    gap: 25px;
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+    overflow: hidden; /* Убрать полосу прокрутки */
+}
+
+/* Product Card */
+.product-card {
+    flex: 0 0 280px;
+    background-color: rgba(255, 255, 255, 0.95); /* Полупрозрачный фон */
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-title {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+.price {
+    font-size: 1.3rem;
+    color: #27ae60; /* Зеленый цвет цены */
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.add-to-cart {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #219a52;
+}
+
+.bone-icon {
+    width: 18px;
+    height: 18px;
+}
+
+/* Carousel Controls */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #27ae60;
+    font-size: 1.4rem;
+}
+
+.carousel-control.prev {
+    left: -20px;
+}
+
+.carousel-control.next {
+    right: -20px;
+}
+
+.carousel-control:hover {
+    background: #f1f1f1;
+}
+
+/* Адаптивность для мобильных */
+@media (max-width: 768px) {
+    .product-card {
+        flex: 0 0 80%;
+    }
+
+    .carousel-control {
+        display: none;
+    }
+}
