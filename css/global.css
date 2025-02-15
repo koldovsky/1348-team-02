@@ -24,7 +24,19 @@
   --color-text-secondary: rgb(149, 139, 126);
   --color-secondary: rgb(237, 100, 53);
   --white: #ffffff;
-
+ /*Color for header*/
+ --color-bg-main: #f9f1eb;
+ --color-text-main: #3c3731;
+ --color-text-secondary: #958b7e;
+ --color-text-muted: rgb(107, 107, 107);
+ --color-accent-main: #e76f4a;
+ --color-accent-hover: #e0633c;
+ --color-link: #ed6435;
+ --color-link-hover: black;
+ --color-btn-bg: #ffe8da;
+ --color-btn-hover: #a9f3f7;
+ --color-border: #45c1c7;
+ --color-border-hover: #278388;
   /* Typography */
   --font-size-base: 16px;
 
