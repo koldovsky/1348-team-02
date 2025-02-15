@@ -1,25 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-:root{
-    --title-font: "Baloo 2", cursive;
-    --body-font: "PT Sans", sans-serif;
-    font-family: var(--body-font);
-    --title-color: rgb(60, 55, 49);
-    --body-color: rgb(60, 55, 49);
-    --price-color: rgb(237, 100, 53);
-    --promotion-color: rgb(69, 193, 199);
-    --subtitle-color: rgb(149, 139, 126);
-    --slide-border-color: rgb(255, 230, 212);
-    --slide-pet-nane-color:rgb(221, 102, 68);
-    --slide-message-color:rgb(142, 142, 142);
-    scroll-behavior: smooth;
-    min-width: var(--base-min-width);
-    margin: 0;
-    padding: 0;
-    font-family: "PT Sans", sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
-a {
-  text-decoration: none;
-  color: inherit;
+:root {
+  /* Font Settings */
+  --title-font: "Baloo 2", cursive;
+  --body-font: "PT Sans", sans-serif;
+  --font-secondary: var(--title-font);
+  font-family: var(--body-font);
+
+  /* Colors */
+  --title-color: rgb(60, 55, 49);
+  --body-color: rgb(60, 55, 49);
+  --price-color: rgb(237, 100, 53);
+  --promotion-color: rgb(69, 193, 199);
+  --subtitle-color: rgb(149, 139, 126);
+  --slide-border-color: rgb(255, 230, 212);
+  --slide-pet-name-color: rgb(221, 102, 68);
+  --slide-message-color: rgb(142, 142, 142);
+  --color-bg-main: #fdf6f2;
+  --color-bg-light-blue: #ddeef7;
+  --color-bg-button: #ffe6d4;
+  --color-text-primary: rgb(60, 55, 49);
+  --color-text-secondary: rgb(149, 139, 126);
+  --color-secondary: rgb(237, 100, 53);
+  --white: #ffffff;
+
+  /* Typography */
+  --font-size-base: 16px;
+
+  /* Layout */
+  scroll-behavior: smooth;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
 }
