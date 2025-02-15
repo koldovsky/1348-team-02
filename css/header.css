@@ -190,8 +190,8 @@ svg:hover {
     display: none;
     flex-direction: column;
     cursor: pointer;
-    margin-left: auto; /* Розміщає бургер-меню праворуч */
-    padding-right: 10px; /* Додає відступ справа, щоб не виходило за межі */
+    margin-left: auto;
+    padding-right: 10px; 
 }
 
 .burger-line {
@@ -209,7 +209,7 @@ svg:hover {
 
     .logo-link-media {
         display: flex;
-        padding: 15 15px; /* Додає відступи з боків, щоб забезпечити простір */
+        padding: 15 15px; 
     }
 
     .headrer-navigation-style {
