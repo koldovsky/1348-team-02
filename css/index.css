@@ -1,5 +1,7 @@
+@import "./reset.css";
 @import "./global.css";
 @import "./index.cart.css";
 @import "./header.css";
+@import "./promotion.partial.css";
 @import "./index.our-shop.css";
 @import "./components.css";

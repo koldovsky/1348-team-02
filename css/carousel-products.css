@@ -1,0 +1,178 @@
+.carousel-products {
+    padding: 0px 24px;
+    align-items: center;
+    justify-content: center;
+
+    .carousel-products__title {
+        text-align: center;
+        font-family: var(--font-secondary);
+        font-size: 30px;
+        color: var(--color-text-primary);
+        margin: 5px;
+
+        @media (min-width: 768px) {
+            font-size: 44px;
+        }
+
+        @media (min-width: 992px) {
+            font-size: 50px;
+        }
+    }
+
+    .bon-icon {
+        width: 70px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .carousel-products-subtitle {
+        font-size: 19px;
+        color: var(--color-text-muted);
+        font-family: var(--font-primary);
+        text-align: center;
+    }
+
+    .carousel-products-list {
+        gap: 30px;
+        text-align: center;
+        overflow: hidden;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        position: relative;
+
+        @media (min-width: 992px) {
+            max-width: 335px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 1200px) {
+            max-width: 370px;
+        }
+
+        .carousel-products-arrow-left,
+        .carousel-products-arrow-right {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            background-color: var(--color-text-primary);
+            opacity: 0.9;
+            z-index: 1;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border: none;
+            padding: 0;
+
+            @media (min-width: 768px) {
+                width: 35px;
+                height: 35px;
+            }
+
+            @media (min-width: 1200px) {
+                background-color: var(--white);
+            }
+        }
+
+        .carousel-products-arrow-left:hover,
+        .carousel-products-arrow-right:hover {
+            background-color: var(--color-text-primary); /* Трохи світліший сірий на hover */
+            opacity: 1;
+
+            @media (min-width: 1200px) {
+                background-color: var(--white);
+            }
+        }
+
+        .carousel-products-arrow-right {
+            right: 0;
+            left: auto;
+        }
+
+        .carousel-products-arrow-left svg,
+        .carousel-products-arrow-right svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--color-text-secondary);
+
+            @media (min-width: 768px) {
+                width: 30px;
+                height: 30px;
+            }
+
+            @media (min-width: 1200px) {
+                width: 50px;
+                height: 50px;
+                fill: var(--color-text-primary);
+            }
+        }
+
+        .carousel-products-item {
+            border: 2px solid var(--color-bg-button);
+            margin: 15px;
+            padding: 25px;
+
+            @media (min-width: 992px) {
+                margin: 0 auto;
+                max-width: 300px;
+                padding: 25px;
+            }
+
+            @media (min-width: 1024px) {
+                margin: 0 auto;
+                padding: 25px;
+            }
+
+            .carousel-products-img-animal {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+                margin: 0 auto;
+
+                @media (min-width: 768px) {
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+
+            .carousel-products-item-title {
+                font-size: 22px;
+                font-family: var(--font-secondary);
+                color: var(--color-text-primary);
+
+                @media (min-width: 768px) {
+                    font-size: 23px;
+                }
+
+                @media (min-width: 992px) {
+                    font-size: 24px;
+                }
+
+                .carousel-products-item-title-arrow-right {
+                    font-size: 22px;
+                    font-family: var(--font-primary);
+                    color: var(--color-primary);
+
+                    @media (min-width: 768px) {
+                        font-size: 23px;
+                    }
+
+                    @media (min-width: 992px) {
+                        font-size: 24px;
+                    }
+                }
+            }
+
+            .carousel-products-description {
+                font-size: 15px;
+                font-family: var(--font-primary);
+                color: var(--color-text-muted);
+                text-align: center;
+            }
+        }
+    }
+}
