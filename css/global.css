@@ -5,8 +5,11 @@
     --body-font: "PT Sans", sans-serif;
     font-family: var(--body-font);
     --title-color: rgb(60, 55, 49);
-    --body-color: rgb(60, 55, 49);
+    --body-color: rgb(149, 139, 126);
     --price-color: rgb(237, 100, 53);
+    --used-button-color: rgb(255, 228, 212);
+    --button-text-color: rgb(69, 193, 199);
+    --button-color: rgb(184, 228, 236);
     scroll-behavior: smooth;
 }
 a{
