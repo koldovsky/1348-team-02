@@ -1,5 +1,5 @@
 .carousel-new-arrivals {
-  padding: 0px 24px;
+  padding: 0 24px;
   align-items: center;
   justify-content: center;
 
@@ -13,7 +13,7 @@
   .carousel-new-arrivals__image {
     width: 70px;
     display: block;
-    margin: 0 auto;
+    margin: auto;
   }
   .carousel-new-arrivals__description{
     font-size: 19px;
