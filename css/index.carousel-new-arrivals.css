@@ -24,7 +24,6 @@
   }
   .carousel-new-arrivals__items{
     display: flex;
-    color:var(--color-text-secondary)
 
   }
 }
