@@ -24,6 +24,7 @@
   }
   .carousel-new-arrivals__items{
     display: flex;
+    text-align: center;
 
   }
 }
