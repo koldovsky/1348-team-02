@@ -8,8 +8,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: url(..assets/images/promotion.partial/promotion-background.png);
-  }
+    background-image: url('../images/promotion.partial/promotion-background.png');
+    background-size: cover;
+    background-position: center;
+}
   
   .promotion__container {
     width: 100%;
@@ -19,6 +21,9 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
+    background-image: url('../images/promotion.partial/promotion-background.png');
+    background-size: cover;
+    background-position: center;
   }
   
   .promotion__content {
@@ -54,7 +59,8 @@ body {
   }
   
   .promotion__countdown {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: start;
     gap: 10px;
     margin: 20px 0;
