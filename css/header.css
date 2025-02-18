@@ -126,7 +126,6 @@ svg:hover {
   justify-content: center;
   color: var(--color-text-main);
   position: relative;
-  overflow: hidden;
 }
 
 .h1text {
@@ -134,6 +133,7 @@ svg:hover {
   font-family: "Baloo 2", sans-serif;
   line-height: 60px;
   margin: 0;
+  overflow: hidden;
 }
 
 .style-text-header {
