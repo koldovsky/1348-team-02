@@ -1,11 +1,10 @@
 <!-- Margo Matskevych  -->
 <section>
   <link rel="stylesheet" href="css/index.cart.css" />
+  <link rel="stylesheet" href="path/to/global/global.css" />
 
   <div class="cart__icon" style="display: none">
     <svg
-      width="24"
-      height="30"
       viewBox="0 0 24 30"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -29,6 +28,8 @@
       0
     </div>
   </div>
+
+  <div data-sub-item="title" class="order-title">Products</div>
 
   <section class="products">
     <div
@@ -68,84 +69,83 @@
 
   <div id="cartModal" class="modal">
     <div class="modal__content">
-      <span id="closeCart" class="modal__close">&times;</span>
-      <h2 class="modal__title">Shopping cart</h2>
-      <div id="emptyMessage" class="modal__empty-message" style="display: none">
-        Shopping cart is empty
+      <div class="modal__title-wrapper">
+        <span id="closeCart" class="modal__close">&times;</span>
+        <h2 class="modal__title">Shopping cart</h2>
       </div>
-      <div id="cartItems" class="modal__items"></div>
-      <p class="modal__total">
-        <strong>Total:</strong>$<span id="cartTotal" class="modal__total-amount"
-          >0,00</span
+      <div class="modal__content__inner">
+        <div
+          id="emptyMessage"
+          class="modal__empty-message"
+          style="display: none"
         >
-      </p>
-      <form id="orderForm" class="modal__order-form">
-        <label for="text" class="modal__label"
-          >Name<span
-            data-sub-item="required"
-            style="opacity: 1"
-            class="required-star_176"
-            >*</span
-          ></label
-        >
-        <input
-          type="text"
-          id="text"
-          class="modal__input"
-          placeholder="Your name"
-          required
-        />
+          Shopping cart is empty
+        </div>
+        <div id="cartItems" class="modal__items"></div>
+        <p class="modal__total">
+          <strong>Total:</strong>$<span
+            id="cartTotal"
+            class="modal__total-amount"
+            >0,00</span
+          >
+        </p>
+        <form id="orderForm" class="modal__order-form">
+          <label for="text" class="modal__label">
+            Name<span data-sub-item="required" class="required-star_176"
+              >*</span
+            >
+          </label>
+          <input
+            type="text"
+            id="text"
+            class="modal__input"
+            placeholder="Your name"
+            required
+          />
 
-        <label for="email" class="modal__label"
-          >Email<span
-            data-sub-item="required"
-            style="opacity: 1"
-            class="required-star_176"
-            >*</span
-          ></label
-        >
-        <input
-          type="email"
-          id="email"
-          class="modal__input"
-          placeholder="Your email address"
-          required
-        />
+          <label for="email" class="modal__label">
+            Email<span data-sub-item="required" class="required-star_176"
+              >*</span
+            >
+          </label>
+          <input
+            type="email"
+            id="email"
+            class="modal__input"
+            placeholder="Your email address"
+            required
+          />
 
-        <label for="phone" class="modal__label"
-          >Phone<span
-            data-sub-item="required"
-            style="opacity: 1"
-            class="required-star_176"
-            >*</span
-          ></label
-        >
-        <input
-          type="phone"
-          id="phone"
-          class="modal__input"
-          placeholder="Your phone"
-          required
-        />
+          <label for="phone" class="modal__label">
+            Phone<span data-sub-item="required" class="required-star_176"
+              >*</span
+            >
+          </label>
+          <input
+            type="phone"
+            id="phone"
+            class="modal__input"
+            placeholder="Your phone"
+            required
+          />
 
-        <label for="comment" class="modal__label"
-          >Comment<span
-            data-sub-item="required"
-            style="opacity: 1"
-            class="required-star_176"
-            >*</span
-          ></label
-        >
-        <input
-          type="text"
-          id="comment"
-          class="modal__input"
-          placeholder="Your comment"
-          required
-        />
-      </form>
-      <button id="orderBtn" class="modal__order-btn">Order</button>
+          <label for="comment" class="modal__label">
+            Comment<span data-sub-item="required" class="required-star_176"
+              >*</span
+            >
+          </label>
+          <input
+            type="text"
+            id="comment"
+            class="modal__input"
+            placeholder="Your comment"
+            required
+          />
+        </form>
+        <button id="orderBtn" class="modal__order-btn">Order</button>
+      </div>
     </div>
   </div>
+
   <script src="js/index.cart.js"></script>
 </section>
