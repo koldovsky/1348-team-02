@@ -1,0 +1,16 @@
+.button {
+    font-weight: bold;
+    font-size: 16.5px;
+    display: inline-block;
+    padding: 5px 15px;
+    color: var(--button-text-color);
+    background-color: var(--button-color);
+    border-radius: 20px;
+    cursor: pointer;
+
+    &:visited {
+        color: var(--price-color);
+        background-color: var(--used-button-color);
+    }
+
+}

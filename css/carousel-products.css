@@ -23,12 +23,13 @@
         width: 70px;
         display: block;
         margin: 0 auto;
+        padding-bottom: 20px;
     }
 
     .carousel-products-subtitle {
         font-size: 19px;
         color: var(--color-text-muted);
-        font-family: var(--font-primary);
+        font-family: var(--body-font);
         text-align: center;
     }
 
@@ -154,8 +155,8 @@
 
                 .carousel-products-item-title-arrow-right {
                     font-size: 22px;
-                    font-family: var(--font-primary);
-                    color: var(--color-primary);
+                    font-family: var(--body-font);
+                    color: var(--color-border);
 
                     @media (min-width: 768px) {
                         font-size: 23px;
@@ -169,7 +170,7 @@
 
             .carousel-products-description {
                 font-size: 15px;
-                font-family: var(--font-primary);
+                font-family: var(--body-font);
                 color: var(--color-text-muted);
                 text-align: center;
             }

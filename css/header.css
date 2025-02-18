@@ -3,12 +3,7 @@
   display: flex;
   flex-direction: column;
   background-color: var(--color-bg-main);
-}
-
-.containers {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
+  padding: 0;
 }
 
 .time-contact {
@@ -143,6 +138,7 @@ svg:hover {
   font-size: 19px;
   font-family: "PT Sans", sans-serif;
   color: var(--color-text-secondary);
+  margin: 25px 0px;
 }
 
 .btn-style {
@@ -181,4 +177,71 @@ svg:hover {
 
 .btn-style:hover {
   opacity: 0.8;
+}
+
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+    padding-right: 10px; 
+}
+
+.burger-line {
+    width: 25px;
+    height: 3px;
+    margin: 3px 0;
+    background-color: #000000;
+   
+}
+
+@media screen and (max-width: 990px) {
+    .burger-menu {
+        display: flex;
+    }
+
+    .logo-link-media {
+        display: flex;
+        padding: 15 15px; 
+    }
+
+    .headrer-navigation-style {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .headrer-navigation-style.active {
+        display: flex;
+    }
+
+    .headrer-navigation {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .headrer-navigation-link {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        margin: 15px;
+        font-size: 18px;
+    }
+
+    .time-contact {
+        display: none;
+    }
+
+    .social-networks {
+        display: none;
+    }
+
 }
