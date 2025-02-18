@@ -126,6 +126,7 @@ svg:hover {
   justify-content: center;
   color: var(--color-text-main);
   position: relative;
+  overflow: hidden;
 }
 
 .h1text {
@@ -251,7 +252,7 @@ svg:hover {
     }
 
     .headrer-navigation-link {
-        color: rgb(0, 0, 0);
+        color:var(--color-text-muted);
         text-decoration: none;
         margin: 15px;
         font-size: 18px;
