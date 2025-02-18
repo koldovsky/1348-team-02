@@ -1,25 +1,32 @@
 .cart__icon {
-    font-family: var(--body-font);
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    cursor: pointer;
-    display: none;
-    color: var(--color-text-primary); 
-  }
-
-  .cart__count {
-    font-family: var(--body-font);
+    display: block;
     position: absolute;
-    top: -5px;
-    right: -5px;
+    height: 100%;
+    max-width: 100%;
+  
+}
+.ui-cart-icon-color--light_3Gm {
+    stroke: #3c3731;
+}
+.cart__icon svg path {
+    
+    fill: hsl(0, 0%, 100%) !important;
+}
+
+.counter_3pK, .counter_3pK.circle_2cg {
+    top: -2px;
+    right: -2px;
+}
+.counter_3pK {
+    display: flex
+;
+    position: absolute;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
-    padding: 5px 10px;
-    font-size: 14px;
-    display: none;
-    color: var(--color-text-primary); 
-  }
+    justify-content: center;
+    align-items: center;
+}
   
   .cart__icon.show,
   .cart__count.show {
@@ -65,9 +72,11 @@
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+    margin: 16px 0 24px;
   }
   
   .modal__content {
@@ -79,6 +88,8 @@
     position: relative;
     text-align: left;
     border-radius: 8px;
+
+    
   }
   
   .modal__close {
@@ -124,37 +135,50 @@
     flex-direction: column;
     gap: 15px;
     color: var(--color-text-primary); 
+
   }
   
   .modal__label {
     font-family: var(--body-font);
-    font-size: 16px;
-    margin: 12px 0px 0px;
-    padding: 11px 22px;
+    font-size: 17px;
+margin: 12px 0 0;
+  }
 
-  }
-  
   .modal__input {
-    padding: 8px 12px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+    font-family: var(--body-font);
+    color: var( --color-text-main); 
     font-size: 14px;
-    margin: 12px 0px 0px;
-    background-color: rgba(60, 55, 49, 0.12);
+    margin: 12px 0 0;
+    padding: 11px 22px;
+    background-color:rgba(60, 55, 49, 0.12);
+    --w-get-input-background-color:rgba(60, 55, 49, 0.12);
+    display: flex;
+    border-radius: 30px;
+    border:none;
   }
-  
-  .modal__order-btn {
-    background-color: #ff6600;
-    color: white;
-    padding: 12px;
+  .modal__input:hover {
+    border-color:#45c1c7;
+  }
+  .modal__order-btn{
+    display: block;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin: 10px auto;
+    background-color: var(--color-btn-bg);
+    color: var(--color-link);
     border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
+    font-weight: normal;
+ 
   }
   
   .modal__order-btn:hover {
-    background-color: #e65c00;
+    background-color: var(--color-btn-hover);
+    color: var(--color-border);
+    border: none;
   }
+  
+  
   
