@@ -1,145 +1,146 @@
 body {
-    font-family: var(--body-font);
-    background-color: var(--bg-color);
-  }
-  
-  .promotion {
-    padding: 40px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../images/promotion.partial/promotion-background.png');
-    background-size: cover;
-    background-position: center;
+  font-family: var(--body-font);
+  background-color: var(--bg-color);
 }
-  
-  .promotion__container {
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    background-image: url('../images/promotion.partial/promotion-background.png');
-    background-size: cover;
-    background-position: center;
-  }
-  
-  .promotion__content {
-    flex: 1;
-    max-width: 500px;
-  }
-  
-  .promotion__title {
-    font-size: 3.5rem;
-    font-weight: bold;
-    margin: 10px 0;
-    font-family: var(--title-font);
-    color: var(--title-color);
-  }
-  
-  .promotion__description {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 10px 0;
-    color: var(--body-color);
-  }
-  
-  .promotion__label {
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: var(--promotion-color);
-  }
-  
-  .promotion__discount {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: var(--price-color);
-  }
-  
-  .promotion__countdown {
+
+.promotion {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promotion__container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.promotion__content {
+  flex: 1;
+  max-width: 500px;
+  height: 300px;
+  background-image: url('images/promotion-background.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.promotion__title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+  font-family: var(--title-font);
+  color: var(--title-color);
+}
+
+.promotion__description {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: var(--body-color);
+}
+
+.promotion__label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--promotion-color);
+}
+
+.promotion__discount {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--price-color);
+}
+
+.promotion__countdown {
+  display: grid;
+}
+
+.promotion__countdown {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-content: start;
+    grid-template-columns: repeat(2, 1fr); /* Дві колонки */
     gap: 10px;
-    margin: 20px 0;
-  }
-  
-  .promotion__countdown-item {
+}
+
+
+.promotion__countdown-item {
+  text-align: center;
+  border: 2px solid var(--promotion-color);
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 70px;
+}
+
+.promotion__countdown-number {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--title-color);
+}
+
+.promotion__countdown-label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--body-color);
+}
+
+.promotion__button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: var(--promotion-color);
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.promotion__button:hover {
+  background-color: #0e8183;
+}
+
+.promotion__image {
+  flex: 1;
+  max-width: 500px;
+}
+
+.promotion__image img {
+  width: 100%;
+  max-width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .promotion__container {
+    flex-direction: column;
     text-align: center;
-    border: 2px solid var(--promotion-color);
-    padding: 10px;
-    border-radius: 5px;
-    min-width: 70px;
   }
-  
-  .promotion__countdown-number {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: var(--title-color);
+
+  .promotion__countdown {
+    justify-content: center;
   }
-  
-  .promotion__countdown-label {
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: var(--body-color);
+
+  .promotion__title {
+    font-size: 2.5rem;
   }
-  
-  .promotion__button {
-    display: inline-block;
-    padding: 15px 30px;
+
+  .promotion__description {
     font-size: 1rem;
-    font-weight: bold;
-    color: #fff;
-    background-color: var(--promotion-color);
-    border-radius: 25px;
-    text-decoration: none;
-    transition: background 0.3s ease;
   }
-  
-  .promotion__button:hover {
-    background-color: #0e8183;
+
+  .promotion__countdown-number {
+    font-size: 1.5rem;
   }
-  
-  .promotion__image {
-    flex: 1;
-    max-width: 500px;
+
+  .promotion__countdown-label {
+    font-size: 0.8rem;
   }
-  
-  .promotion__image img {
-    width: 100%;
-    max-width: 100%;
+
+  .promotion__button {
+    font-size: 1rem;
   }
-  
-  
-  @media (max-width: 768px) {
-    .promotion__container {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .promotion__countdown {
-      justify-content: center;
-    }
-  
-    .promotion__title {
-      font-size: 2.5rem;
-    }
-  
-    .promotion__description {
-      font-size: 1rem;
-    }
-  
-    .promotion__countdown-number {
-      font-size: 1.5rem;
-    }
-  
-    .promotion__countdown-label {
-      font-size: 0.8rem;
-    }
-  
-    .promotion__button {
-      font-size: 1rem;
-    }
-  }
+}
