@@ -32,6 +32,7 @@
     height: 22px;
     flex-shrink: 0;
     display: block;
+   
 }
 
 .cart__icon {
@@ -49,6 +50,7 @@
     box-sizing: border-box;
     z-index: 1000;
     transition: filter 0.3s ease;
+  
 }
 
 .ui-cart-icon-color--light_3Gm {
@@ -134,7 +136,8 @@
   
   .quantity-input {
     display: flex;
-        height: 36px;
+        height: 30px;
+        width: 75px;
         min-width: 75px;
         padding: 8px 12px;
         margin-right: 16px;
@@ -251,6 +254,7 @@
     top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
@@ -274,7 +278,7 @@
     text-align: left;
     width: var(--window-width, 900px); 
     min-width: 320px;
-    margin: auto;
+    margin:  auto;
     padding: 24px;
     box-shadow: var(--box-shadow, 0 4px 8px rgba(33, 39, 54, 0.16));
 }
@@ -559,8 +563,8 @@
     }
 
     .modal__content {
-        width: 90%;
-        margin: 20% auto;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .modal__content .modal__content__inner {
