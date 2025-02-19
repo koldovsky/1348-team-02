@@ -3,7 +3,7 @@ const cartCount = document.querySelector(".cart__count");
 const cartModal = document.querySelector(".modal");
 const closeCart = document.querySelector(".modal__close");
 const cartItemsContainer = document.querySelector(".modal__items");
-const cartTotal = document.querySelector(".modal__total-amount");
+const cartTotal = document.querySelector("#cartTotal");
 const addToCartButtons = document.querySelectorAll(".product__btn");
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];

@@ -70,7 +70,22 @@
   <div id="cartModal" class="modal">
     <div class="modal__content">
       <div class="modal__title-wrapper">
-        <span id="closeCart" class="modal__close">&times;</span>
+        <div id="closeCart" class="modal__close">
+          <span class="modal__close-icon">
+            <svg
+              width="100"
+              viewBox="0 0 24 28"
+              xmlns="http://www.w3.org/2000/svg"
+              height="100%"
+            >
+              <path
+                d="M19.7 18.3c.4.4.4 1 0 1.4-.2.2-.4.3-.7.3-.3 0-.5-.1-.7-.3L12 13.4l-6.3 6.3c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7 0-.3.1-.5.3-.7l6.3-6.3-6.3-6.3c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l6.3 6.3 6.3-6.3c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4L13.4 12l6.3 6.3z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </span>
+        </div>
+
         <h2 class="modal__title">Shopping cart</h2>
       </div>
       <div class="modal__content__inner">
@@ -82,13 +97,124 @@
           Shopping cart is empty
         </div>
         <div id="cartItems" class="modal__items"></div>
-        <p class="modal__total">
-          <strong>Total:</strong>$<span
-            id="cartTotal"
-            class="modal__total-amount"
-            >0,00</span
+        <div class="price-details-footer price-details-footer--with-promo-code">
+          <div
+            data-sub-item="product-promo-code"
+            class="promo-code"
+            style="display: block"
           >
-        </p>
+            <button
+              data-sub-item="promo-code-button"
+              class="promo-code-button --body-font"
+              type="button"
+            >
+              Promo code
+            </button>
+            <div
+              class="promo-code-input-container close"
+              data-sub-item="promo-code-input-container"
+            >
+              <div class="promo-code-input-group">
+                <div class="promo-code-input-group-input--container">
+                  <input
+                    type="text"
+                    data-sub-item="promo-code-input"
+                    class="promo-code-input-group-input --body-font"
+                    placeholder="Enter promo code"
+                    maxlength="20"
+                  /><button
+                    data-sub-item="promo-code-discard-button"
+                    class="promo-code-input-group-button--discard_"
+                    type="button"
+                    style="display: none"
+                  >
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.558058 0.558058C0.802136 0.313981 1.19786 0.313981 1.44194 0.558058L6 5.11612L10.5581 0.558058C10.8021 0.313981 11.1979 0.313981 11.4419 0.558058C11.686 0.802136 11.686 1.19786 11.4419 1.44194L6.88388 6L11.4419 10.5581C11.686 10.8021 11.686 11.1979 11.4419 11.4419C11.1979 11.686 10.8021 11.686 10.5581 11.4419L6 6.88388L1.44194 11.4419C1.19786 11.686 0.802136 11.686 0.558058 11.4419C0.313981 11.1979 0.313981 10.8021 0.558058 10.5581L5.11612 6L0.558058 1.44194C0.313981 1.19786 0.313981 0.802136 0.558058 0.558058Z"
+                        fill="#646E82"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <button
+                  data-sub-item="promo-code-apply-button"
+                  class="promo-code-input-group-button"
+                  type="button"
+                  style="display: block"
+                >
+                  OK
+                </button>
+              </div>
+              <div
+                data-sub-item="promo-code-validation-text"
+                class="promo-code-validation-text"
+              ></div>
+            </div>
+          </div>
+          <div
+            data-sub-item="price-details"
+            class="--body-font price-details price-details"
+            style="display: flex"
+          >
+            <div class="price-details__column">
+              <span
+                class="price-details__cell"
+                data-sub-item="sub-total-title"
+                style="display: none"
+                >Subtotal:&nbsp;</span
+              ><span
+                class="price-details__cell"
+                data-sub-item="promo-code-title"
+                data-phrase='{"phrase":"Promo code"}'
+                style="display: none"
+                >Promo code:&nbsp;</span
+              ><span
+                class="price-details__cell"
+                data-sub-item="shipping-title"
+                style="display: none"
+                >Shipping cost:&nbsp;</span
+              ><span
+                class="price-details__cell total_nvd total-price"
+                id="cartTotal"
+                >Total:&nbsp;</span
+              >
+            </div>
+            <div class="price-details__column">
+              <span
+                class="price-details__cell"
+                data-sub-item="sub-total-price"
+                data-test="sub-total"
+                style="display: none"
+                >0.00</span
+              ><span
+                class="price-details__cell"
+                data-sub-item="promo-code-price"
+                data-test="promo-code-price"
+                style="display: none"
+                >0</span
+              ><span
+                class="price-details__cell --body-font"
+                data-sub-item="shipping-price"
+                data-test="shipping-price"
+                style="display: none"
+                >0.00</span
+              ><span
+                class="price-details__cell --body-font"
+                data-sub-item="total-price"
+                data-test="total"
+              ></span>
+            </div>
+          </div>
+        </div>
+
         <form id="orderForm" class="modal__order-form">
           <label for="text" class="modal__label">
             Name<span data-sub-item="required" class="required-star_176"
