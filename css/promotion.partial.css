@@ -1,8 +1,15 @@
-.promotion__container {
-    background-image: url(../images/promotion-background.jpg);
+.promotion {
+    max-height: 860px;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    background-image: url('/images/promotion-background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.promotion__container {
+    max-height: 580px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,6 +17,9 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 480px;
+    min-width: auto;
+    margin-left: 20%;
 }
 
 .promotion__countdown {
@@ -21,6 +31,14 @@
     margin: 20px 0;
 }
 
+.promotion__countdown-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+}
+
 .promotion__description {
     font-size: 19px;
     font-weight: bold;
@@ -30,7 +48,7 @@
 }
 
 .promotion__title {
-    font-size: 48px;
+    font-size: 82px; /* Додано крапку з комою */
     font-weight: bold;
     margin: 20px 0;
     font-family: var(--title-font);
@@ -64,16 +82,21 @@
 .promotion__countdown-number {
     font-size: 36px;
     font-weight: bold;
-    margin: 20px 0;
+    margin: 0;
     font-family: var(--title-font);
     color: var(--title-color);
 }
 
-
 .promotion__countdown-label {
     font-size: 18px;
     font-weight: bold;
-    margin: 20px 0;
+    margin: 0;
     font-family: var(--body-font);
     color: var(--body-color);
+}
+
+@media (max-width: 768px) {
+    .promotion__container {
+        margin-left: 0;
+    }
 }
