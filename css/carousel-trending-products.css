@@ -1,4 +1,3 @@
-/* Trending Products Section */
 .trending-products {
     padding: 40px 20px;
     background-color: #f9f9f9;
@@ -21,7 +20,6 @@
     font-weight: 400;
 }
 
-/* Carousel Container */
 .carousel-container {
     position: relative;
     max-width: 1200px;
@@ -29,19 +27,17 @@
     padding: 0 40px;
 }
 
-/* Carousel Wrapper */
 .carousel-wrapper {
     display: flex;
     gap: 25px;
     scroll-behavior: smooth;
     padding-bottom: 20px;
-    overflow: hidden; /* Убрать полосу прокрутки */
+    overflow: hidden; 
 }
 
-/* Product Card */
 .product-card {
     flex: 0 0 280px;
-    background-color: rgba(255, 255, 255, 0.95); /* Полупрозрачный фон */
+    background-color: rgba(255, 255, 255, 0.95); 
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -69,7 +65,7 @@
 
 .price {
     font-size: 1.3rem;
-    color: #27ae60; /* Зеленый цвет цены */
+    color: #27ae60; 
     font-weight: 700;
     margin: 15px 0;
 }
@@ -131,7 +127,6 @@
     background: #f1f1f1;
 }
 
-/* Адаптивность для мобильных */
 @media (max-width: 768px) {
     .product-card {
         flex: 0 0 80%;
