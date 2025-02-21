@@ -121,7 +121,7 @@ svg:hover {
 }
 
 .main-page {
-  padding: 0 30px;
+  padding: 250px 30px;
   margin: auto;
   justify-content: center;
   color: var(--color-text-main);
