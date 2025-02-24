@@ -5,8 +5,8 @@ function circleCircumference(circle) {
 
 //https://www.codewars.com/kata/training-js-number-12-loop-statement-for-dot-in-and-for-dot-of/train/javascript
 function giveMeFive(obj) {
-    let list = [];
-    for (let listKey in obj) {
+    const list = [];
+    for (const listKey in obj) {
         if (listKey.length === 5) {
             list.push(listKey);
         }
@@ -19,7 +19,7 @@ function giveMeFive(obj) {
 
 //https://www.codewars.com/kata/understanding-closures-the-basics/train/javascript
 function buildFun(n) {
-    let res = [];
+    const res = [];
     for (let i = 0; i < n; i++) {
         (function (i) {
             res.push(function () {
