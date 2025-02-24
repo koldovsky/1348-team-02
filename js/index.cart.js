@@ -5,6 +5,7 @@ const closeCart = document.querySelector(".modal__close");
 const cartItemsContainer = document.querySelector(".modal__items");
 const cartTotal = document.querySelector("#cartTotal");
 const addToCartButtons = document.querySelectorAll(".product__btn");
+const promoCodeInputContainer = document.querySelector('.promo-code-input-container');
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -106,11 +107,6 @@ function createCartItemHTML(item) {
     </div>
   </div>
 </div>
-
-
-
-
-
     `;
 }
 
@@ -127,6 +123,11 @@ function changeQuantity(id, amount) {
 
     saveCart();
     updateCart();
+}
+
+function togglePromoCodeInput() {
+  const promoCodeInputContainer = document.querySelector('.promo-code-input-container');
+  promoCodeInputContainer.classList.toggle('close');
 }
 
 function saveCart() {
