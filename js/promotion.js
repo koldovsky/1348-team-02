@@ -1,20 +1,28 @@
-function startCountdown() {
-    const targetDate = new Date("March 15, 2024 00:00:00").getTime();
+const daysElement = document.getElementById("days");
+              const hoursElement = document.getElementById("hours");
+              const minutesElement = document.getElementById("minutes");
+              const secondsElement = document.getElementById("seconds");
 
-    function updateCountdown() {
-        const now = new Date().getTime();
-        const timeLeft = targetDate - now;
-        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+              const targetDate = new Date("2025-03-15T00:00:00Z");
 
-        document.getElementById("days").innerText = days.toString().padStart(2, "0");
-        document.getElementById("hours").innerText = hours.toString().padStart(2, "0");
-        document.getElementById("minutes").innerText = minutes.toString().padStart(2, "0");
-        document.getElementById("seconds").innerText = seconds.toString().padStart(2, "0");
-    }
+              function updateCountdown() {
+                const currentDate = new Date();
+                const difference = targetDate - currentDate;
 
-    updateCountdown();
-    setInterval(updateCountdown, 1000);
-}
+                const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+                const hours = Math.floor(
+                  (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+                );
+                const minutes = Math.floor(
+                  (difference % (1000 * 60 * 60)) / (1000 * 60)
+                );
+                const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+                daysElement.textContent = days;
+                hoursElement.textContent = hours;
+                minutesElement.textContent = minutes;
+                secondsElement.textContent = seconds;
+              }
+
+              updateCountdown();
+              setInterval(updateCountdown, 1000);
