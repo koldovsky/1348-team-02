@@ -1,8 +1,10 @@
+
+
 .promotion {
     max-height: 860px;
     padding-top: 110px;
     padding-bottom: 110px;
-    background-image: url('/images/promotion-background.png');
+    background-image: url("../assets/images/promotion-background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,14 +43,13 @@
 
 .promotion__description {
     font-size: 19px;
-    font-weight: bold;
-    margin: 20px 0;
     font-family: var(--body-font);
     color: var(--body-color);
+    margin: 20px 0;
 }
 
 .promotion__title {
-    font-size: 82px; /* Додано крапку з комою */
+    font-size: 82px; 
     font-weight: bold;
     margin: 20px 0;
     font-family: var(--title-font);
