@@ -22,4 +22,7 @@ jobs:
 
     - name: Run HTML Proofer
       run: |
-        htmlproofer . --disable-external --ignore-urls "#aboutUs" --ignore-urls "#categories" --ignore-urls "#trendingProducts" --ignore-urls "#ourNewArrival" --ignore-urls "#our-shop"
+        for file in $(find . -maxdepth 1 -iname "*.html"); do
+          htmlproofer $file --disable-external
+        done
+    
