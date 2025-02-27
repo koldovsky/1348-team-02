@@ -1,7 +1,7 @@
 .promotion {
     background-image: url("../assets/images/promotion-background.png");
     background-size: cover;
-    background-position: center;
+    background-position: left center;
     background-repeat: no-repeat;
     background-color: var(--body-color);
 }
@@ -76,8 +76,8 @@
     justify-content: center;
     align-items: center;
     margin: 0%;
-    height: 100px;
-    width: 100px;
+    height: 110px;
+    width: 110px;
     border: 2px solid var(--color-border);
     border-radius: 10px;
     margin-bottom: 55px;
@@ -100,4 +100,33 @@
     font-family: var(--body-font);
     color: var(--promotion-color-text);
 
+}
+
+@media 
+only screen and (max-width: 1024px) {
+    .promotion__container {
+        margin: 0;
+        padding: 20px;
+    }
+    .promotion__title {
+        font-size: 60px;
+    }
+    .promotion__description {
+        font-size: 16px;
+        
+    }
+    .promotion__discount {
+        font-size: 16px;
+        
+    }
+    .promotion__countdown-number {
+        font-size: 30px;
+    }
+    .promotion__countdown-item {
+        height: 90px;
+        width: 90px;
+    }
+    .promotion__countdown-label {
+        font-size: 14px;
+    }
 }
