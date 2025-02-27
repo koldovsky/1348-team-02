@@ -1,6 +1,7 @@
 function init() {
   import("./index.carousel-promo.js");
   import("./promotion.js");
+  import("./header.js");
 }
 
 const totalPartials = document.querySelectorAll(
