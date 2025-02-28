@@ -5,6 +5,7 @@ function init() {
   import("./header.js");
   import("./index.carousel-products.js");
   import("./index.our-shop.js");
+  import("./index.carousel-new-arrivals.js")
 }
 
 const totalPartials = document.querySelectorAll(
