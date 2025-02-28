@@ -1,12 +1,9 @@
-
-
 .footer {
-    font-family: var(--font-primary);
+    font-family: var(--font-size-base), sans-serif;
     background-color: var(--color-bg-main);
     padding: 25px 0 0;
 }
 
-/* Contact Section */
 .footer__contacts {
     padding: 20px 0;
     display: flex;
@@ -30,7 +27,7 @@
 }
 
 .footer__contacts-label {
-    color: var(--color-primary);
+    color: var(--color-link-hover);
     font-size: 15px;
     margin: 0;
 }
@@ -42,7 +39,7 @@
 
 .footer__contacts-phone__link {
     color: var(--color-secondary);
-    font-family: var(--font-secondary);
+    font-family: var(--body-font), sans-serif;
     font-size: 24px;
     text-decoration: none;
     transition: opacity 0.3s;
@@ -67,12 +64,12 @@
 }
 
 .footer__contacts-sale__arrow {
-    color: var(--color-primary);
+    color: var(--price-color);
     transition: transform 0.3s;
 }
 
 .footer__contacts-sale__link:hover {
-    color: var(--color-primary);
+    color: var(--slide-pet-name-color);
 }
 
 .footer__contacts-sale__link:hover .footer__contacts-sale__arrow {
@@ -93,8 +90,8 @@
     padding: 12px;
     border: 2px solid transparent;
     border-radius: 15px;
-    background: var(--color-bg-input);
-    font-family: var(--font-primary);
+    background: var(--white);
+    font-family: var(--title-font), cursive;
     font-size: 15px;
     color: var(--color-text-primary);
     transition: all 0.3s ease;
@@ -102,14 +99,14 @@
 
 .footer__contacts-form__input:focus {
     outline: none;
-    border-color: var(--color-primary);
+    border-color: var(--color-text-primary);
     background: var(--color-bg-main);
     box-shadow: 0 0 0 4px rgba(69, 193, 199, 0.1);
 }
 
 .footer__contacts-form__input:not(:placeholder-shown) {
     background: var(--color-bg-main);
-    border-color: var(--color-bg-input);
+    border-color: var(--color-text-primary);
 }
 
 .footer__contacts-form__input--error {
@@ -132,7 +129,7 @@
     color: var(--color-secondary);
     border: none;
     border-radius: 15px;
-    font-family: var(--font-primary);
+    font-family: var(--body-font), sans-serif;
     font-size: 15px;
     cursor: pointer;
     transition: opacity 0.3s;
@@ -180,7 +177,7 @@
 }
 
 .footer__info-text__link:hover {
-    color: var(--color-primary);
+    color: var(--color-secondary);
 }
 
 .footer__socials {
@@ -196,10 +193,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
-    background: var(--color-primary);
+    background: var(--color-bg-button);
     transition: all 0.3s ease;
 }
 
@@ -209,14 +206,14 @@
 }
 
 .footer__socials-icon {
-    width: 15px;
-    height: 15px;
-    fill: var(--color-bg-input);
+    width: 20px;
+    height: 20px;
+    fill: var(--price-color);
 }
 
 .footer__heading {
-    font-family: var(--font-secondary);
-    color: var(--color-text-primary);
+    font-family: var(--title-font), cursive;
+    color: var(--color-link-hover);
     font-size: 24px;
     position: relative;
     padding-bottom: 15px;
@@ -246,19 +243,19 @@
 
 .footer__nav-link {
     color: var(--color-text-muted);
-    font-family: var(--font-primary);
+    font-family: var(--title-font), cursive;
     font-size: 15px;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 .footer__nav-link:hover {
-    color: var(--color-primary);
+    color: var(--color-link-hover);
 }
 
 /* Bottom Section */
 .footer__bottom {
-    background: var(--color-bg-bottom);
+    background: var(--color-text-primary);
     padding: 20px 0;
     margin-top: 30px;
 }
@@ -318,7 +315,7 @@
 
 .modal__title {
     color: var(--color-text-primary);
-    font-family: var(--font-secondary);
+    font-family: var(--title-font), cursive;
     font-size: 24px;
     margin-bottom: 15px;
 }
