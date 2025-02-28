@@ -6,6 +6,7 @@ function init() {
   import("./index.carousel-products.js");
   import("./index.our-shop.js");
   import("./index.carousel-new-arrivals.js")
+  import("./index.carousel-trending-products.js")
 }
 
 const totalPartials = document.querySelectorAll(
