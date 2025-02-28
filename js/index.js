@@ -1,8 +1,10 @@
 function init() {
+  import("./products.js");
   import("./index.carousel-promo.js");
   import("./promotion.js");
   import("./header.js");
   import("./index.carousel-products.js");
+  import("./index.our-shop.js");
 }
 
 const totalPartials = document.querySelectorAll(

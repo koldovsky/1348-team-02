@@ -14,6 +14,7 @@ let priceCoeficient = 1;
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+//to remove (only for test)
 addToCartButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const product = button.closest(".product");
@@ -34,8 +35,24 @@ addToCartButtons.forEach((button) => {
   });
 });
 
+function addToCart(id){
+  const product = PRODUCTS_LIST.find((element)=>element.id === id)
+  const existingItem = cart.find((item) => item.id === id);
+
+  if (existingItem) {
+    existingItem.quantity++;
+  } else {
+    cart.push({ id: product.id, name: product.name, price: product.price, image: product.image, quantity: 1 });
+  }
+  console.log(cart)
+  saveCart();
+  updateCart();
+}
+
 function removeItem(itemId) {
-  cart = cart.filter((item) => item.id !== itemId);
+  cart = cart.filter((item) => item.id.toString() !== itemId.toString());
+  console.log(cart)
+
   saveCart();
   updateCart();
 }
@@ -79,10 +96,10 @@ function toggleCartIconAndMessage() {
 
 function createCartItemHTML(item) {
   return ` 
-  <div class="cart-item" data-item="product-cart-item" data-item-id="b1fa86de-23ec-4ade-8e0a-3cf2e0cae1e9">
+  <div class="cart-item" data-item="product-cart-item" data-item-id="${item.id}">
    <div class="cart-item-inner">
       <div class="cart-item-image" data-sub-item="preview">
-         <img src="./assets/images/${item.image}" alt="${item.name}">
+         <img src="${item.image}" alt="${item.name}">
       </div>
       <div class="cart-item-info">
          <div data-sub-item="info" class="cart-item-wrapper-name">
@@ -145,7 +162,7 @@ function createCartItemHTML(item) {
 }
 
 function changeQuantity(id, amount) {
-  const item = cart.find((i) => i.id === id);
+  const item = cart.find((element) => element.id.toString() === id.toString());
   if (!item) return;
 
   const newQuantity = parseInt(amount);
