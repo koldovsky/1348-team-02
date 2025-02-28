@@ -89,6 +89,8 @@
     color: #45C1C7;
     font-size: 16.5px;
     font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
     border: none;
     padding: 0;
     border-radius: 25px;
@@ -101,11 +103,6 @@
     margin-top: 10px;
     margin-left: 0;
     line-height: 48.5px;
-}
-
-.add-to-cart::before,
-.add-to-cart::after {
-    display: none;
 }
 
 .add-to-cart:hover {
