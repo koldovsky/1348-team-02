@@ -5,7 +5,7 @@
    
  let currentSlideIdx=0;
 
-   fuction renderCarousel(slides){
+   function renderCarousel(slides){
     carouselContainer.innerHTML = "";
     
    }
