@@ -1,47 +1,49 @@
 <section class="carousel-new-arrivals">
-    <div class="carousel-new-arrivals__container">
-        <h2 class="carousel-new-arrivals__title">Our new arrivals</h2>
-        <img
-            width="75"
-            src="assets/images/bone-icon.svg"
-            alt="Bone icon"
-            class="carousel-new-arrivals__icon"
-        />
-        <p class="carousel-new-arrivals__description">
-            We offer affordable and safe toys and accessories for your pets.
-        </p>
+  <div class="carousel-new-arrivals__container">
+    <h2 class="carousel-new-arrivals__title">Our new arrivals</h2>
+    <img
+      width="75"
+      src="assets/images/bone-icon.svg"
+      alt="Bone icon"
+      class="carousel-new-arrivals__icon"
+    />
+    <p class="carousel-new-arrivals__description">
+      We offer affordable and safe toys and accessories for your pets.
+    </p>
+  </div>
+  <div class="carousel-new-arrivals__items">
+    <button
+      class="carousel-new-arrivals__arrow carousel-new-arrivals__arrow--left"
+      aria-label="Previous item"
+    >
+      &lt;
+    </button>
+    <div class="carousel-new-arrivals__item">
+      <img
+        width="318"
+        class="carousel-new-arrivals__product-image"
+        src="assets/images/vitalife-crunch-sticks-trea.png"
+        alt="VITALIFE Crunch Sticks Treat"
+      />
+      <a class="carousel-new-arrivals__link" href="#"
+        >VITALIFE Crunch Sticks Treat</a
+      >
+      <p class="carousel-new-arrivals__price">
+        <data value="5">$5.00</data>
+      </p>
+      <button
+        class="carousel-new-arrivals__button button carousel-new-arrivals__button--add-to-cart"
+        data-hx-post="/cart/add"
+        data-hx-vals='{"productId": 51}'
+      >
+        Add to Cart
+      </button>
     </div>
-    <div class="carousel-new-arrivals__items">
-        <button
-            class="carousel-new-arrivals__arrow carousel-new-arrivals__arrow--left"
-            aria-label="Previous item"
-        >
-            &lt;
-        </button>
-        <div class="carousel-new-arrivals__item">
-            <img
-                width="318"
-                class="carousel-new-arrivals__product-image"
-                src="assets/images/vitalife-crunch-sticks-trea.png"
-                alt="VITALIFE Crunch Sticks Treat"
-            />
-            <a class="carousel-new-arrivals__link" href="#">VITALIFE Crunch Sticks Treat</a>
-            <p class="carousel-new-arrivals__price">
-                <data value="5">$5.00</data>
-            </p>
-            <button
-                class="carousel-new-arrivals__button button carousel-new-arrivals__button--add-to-cart"
-                data-hx-post="/cart/add"
-                data-hx-vals='{"productId": 51}'
-            >
-                Add to Cart
-            </button>
-        </div>
-        <button
-            class="carousel-new-arrivals__arrow carousel-new-arrivals__arrow--right"
-            aria-label="Next item"
-        >
-            &gt;
-        </button>
-    </div>
+    <button
+      class="carousel-new-arrivals__arrow carousel-new-arrivals__arrow--right"
+      aria-label="Next item"
+    >
+      &gt;
+    </button>
+  </div>
 </section>
