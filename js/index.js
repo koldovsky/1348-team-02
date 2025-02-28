@@ -2,6 +2,7 @@ function init() {
   import("./index.carousel-promo.js");
   import("./promotion.js");
   import("./header.js");
+  import("./index.carousel-products.js");
 }
 
 const totalPartials = document.querySelectorAll(
