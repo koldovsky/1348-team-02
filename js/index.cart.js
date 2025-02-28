@@ -1,8 +1,8 @@
 const cartIcon = document.querySelector(".cart__icon");
 const cartCount = document.querySelector(".cart__count");
-const cartModal = document.querySelector(".modal");
-const closeCart = document.querySelector(".modal__close");
-const cartItemsContainer = document.querySelector(".modal__items");
+const cartModal = document.querySelector(".cart-modal");
+const closeCart = document.querySelector(".cart-modal__close");
+const cartItemsContainer = document.querySelector(".cart-modal__items");
 const cartTotal = document.querySelector("#cartTotal");
 const addToCartButtons = document.querySelectorAll(".product__btn");
 const promoCodeInputContainer = document.querySelector(
@@ -90,7 +90,7 @@ function toggleCartIconAndMessage() {
   const emptyMessageDisplay = cart.length === 0 ? "block" : "none";
 
   document.querySelector(".cart__icon").style.display = cartIconDisplay;
-  document.querySelector(".modal__empty-message").style.display =
+  document.querySelector(".cart-modal__empty-message").style.display =
     emptyMessageDisplay;
 }
 

@@ -23,7 +23,7 @@
         ></path>
       </svg>
     </div>
-    <div class="counter_3pK circle_2cg cart__count">4</div>
+    <div class="counter_3pK circle_2cg cart__count">0</div>
   </div>
 
   <div data-sub-item="title" class="order-title" >Products</div>
@@ -64,14 +64,13 @@
     </div>
   </section> -->
 
+  <div id="cartModal" class="cart-modal w-grid__item w-grid__item--top">
+    <div class="cart-modal__content">
+      <div class="cart-modal__title-wrapper">
+        <div class="cart-modal__title">Shopping cart</div>
   
-  <div id="cartModal" class="modal w-grid__item w-grid__item--top">
-    <div class="modal__content">
-      <div class="modal__title-wrapper">
-        <div class="modal__title">Shopping cart</div>
-  
-        <div id="closeCart" class="modal__close">
-          <span class="modal__close-icon">
+        <div id="closeCart" class="cart-modal__close">
+          <span class="cart-modal__close-icon">
             <svg
               width="100"
               viewBox="0 0 24 28"
@@ -86,7 +85,7 @@
           </span>
         </div>
       </div>
-      <div class="modal__content__inner">
+      <div class="cart-modal__content__inner">
         <div
         data-sub-item="title"
         class="title order-details__title_3MN --body-font"
@@ -95,12 +94,12 @@
       </div>
         <div
           id="emptyMessage"
-          class="modal__empty-message"
+          class="cart-modal__empty-message"
           style="display: none"
         >
           Shopping cart is empty
         </div>
-        <div id="cartItems" class="modal__items"></div>
+        <div id="cartItems" class="cart-modal__items"></div>
         <div class="price-details-footer price-details-footer--with-promo-code">
           <div
             data-sub-item="product-promo-code"
@@ -223,52 +222,52 @@
           </div>
         </div>
   
-        <form id="orderForm" class="modal__order-form">
-          <label for="text" class="modal__label">
+        <form id="orderForm" class="cart-modal__order-form">
+          <label for="text" class="cart-modal__label">
             Name<span data-sub-item="required" class="required-star_176"> *</span>
           </label>
           <input
             type="text"
             id="text"
-            class="modal__input"
+            class="cart-modal__input"
             placeholder="Your name"
             required
           />
   
-          <label for="email" class="modal__label">
+          <label for="email" class="cart-modal__label">
             Email<span data-sub-item="required" class="required-star_176"> *</span>
           </label>
           <input
             type="email"
             id="email"
-            class="modal__input"
+            class="cart-modal__input"
             placeholder="Your email address"
             required
           />
   
-          <label for="phone" class="modal__label">
+          <label for="phone" class="cart-modal__label">
             Phone<span data-sub-item="required" class="required-star_176"> *</span>
           </label>
           <input
             type="phone"
             id="phone"
-            class="modal__input"
+            class="cart-modal__input"
             placeholder="Your phone"
             required
           />
   
-          <label for="comment" class="modal__label">
+          <label for="comment" class="cart-modal__label">
             Comment<span data-sub-item="required" class="required-star_176"> *</span>
           </label>
           <textarea
             type="text"
             id="comment"
-            class="modal__input textarea"
+            class="cart-modal__input textarea"
             placeholder="Your comment"
             required
             ></textarea>
         </form>
-        <button id="orderBtn" class="modal__order-btn">Order</button>
+        <button id="orderBtn" class="cart-modal__order-btn">Order</button>
       </div>
     </div>
   
