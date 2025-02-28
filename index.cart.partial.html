@@ -26,7 +26,7 @@
     <div class="counter_3pK circle_2cg cart__count">4</div>
   </div>
 
-  <div data-sub-item="title" class="order-title">Products</div>
+  <div data-sub-item="title" class="order-title" >Products</div>
 
   <section class="products">
     <div
@@ -66,7 +66,7 @@
   <div id="cartModal" class="modal w-grid__item w-grid__item--top">
     <div class="modal__content">
       <div class="modal__title-wrapper">
-        <h2 class="modal__title">Shopping cart</h2>
+        <div class="modal__title">Shopping cart</div>
   
         <div id="closeCart" class="modal__close">
           <span class="modal__close-icon">
@@ -255,13 +255,13 @@
           <label for="comment" class="modal__label">
             Comment<span data-sub-item="required" class="required-star_176"> *</span>
           </label>
-          <input
+          <textarea
             type="text"
             id="comment"
-            class="modal__input"
+            class="modal__input textarea"
             placeholder="Your comment"
             required
-          />
+            ></textarea>
         </form>
         <button id="orderBtn" class="modal__order-btn">Order</button>
       </div>
