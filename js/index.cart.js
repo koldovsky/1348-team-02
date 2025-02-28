@@ -5,66 +5,79 @@ const closeCart = document.querySelector(".modal__close");
 const cartItemsContainer = document.querySelector(".modal__items");
 const cartTotal = document.querySelector("#cartTotal");
 const addToCartButtons = document.querySelectorAll(".product__btn");
-const promoCodeInputContainer = document.querySelector('.promo-code-input-container');
+const promoCodeInputContainer = document.querySelector(
+  ".promo-code-input-container"
+);
+const promoCodeApplyBtn = document.querySelector("#promo-code-apply-button");
+const promocodeInput = document.querySelector("#promo-code-input");
+let priceCoeficient = 1;
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-addToCartButtons.forEach(button => {
-    button.addEventListener("click", () => {
-        const product = button.closest('.product');
-        const id = product.getAttribute("data-id");
-        const name = product.getAttribute("data-name");
-        const price = parseFloat(product.getAttribute("data-price"));
-        const image = product.getAttribute("data-image");
-        const existingItem = cart.find(item => item.id === id);
+addToCartButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const product = button.closest(".product");
+    const id = product.getAttribute("data-id");
+    const name = product.getAttribute("data-name");
+    const price = parseFloat(product.getAttribute("data-price"));
+    const image = product.getAttribute("data-image");
+    const existingItem = cart.find((item) => item.id === id);
 
-        if (existingItem) {
-            existingItem.quantity++;
-        } else {
-            cart.push({id, name, price, image, quantity: 1});
-        }
+    if (existingItem) {
+      existingItem.quantity++;
+    } else {
+      cart.push({ id, name, price, image, quantity: 1 });
+    }
 
-        saveCart();
-        updateCart();
-    });
+    saveCart();
+    updateCart();
+  });
 });
 
 function removeItem(itemId) {
-    cart = cart.filter(item => item.id !== itemId);
-    saveCart();
-    updateCart();
+  cart = cart.filter((item) => item.id !== itemId);
+  saveCart();
+  updateCart();
+}
+
+function updateTotal() {
+  let total = 0;
+
+  for (let item of cart) {
+    total += item.price * item.quantity;
+  }
+
+  cartTotal.innerText = "Total: " + "$" + (total * priceCoeficient).toFixed(2);
 }
 
 function updateCart() {
-    cartItemsContainer.innerHTML = "";
-    let total = 0;
-    let itemCount = 0;
-    let cartHTML = '';
+  cartItemsContainer.innerHTML = "";
+  let itemCount = 0;
+  let cartHTML = "";
 
-    for (let item of cart) {
-        total += item.price * item.quantity;
-        itemCount += item.quantity;
+  for (let item of cart) {
+    itemCount += item.quantity;
 
-        cartHTML += createCartItemHTML(item);  
-    }
+    cartHTML += createCartItemHTML(item);
+  }
 
-    cartItemsContainer.innerHTML = cartHTML;  
+  cartItemsContainer.innerHTML = cartHTML;
+  cartCount.innerText = itemCount;
+  updateTotal();
 
-    cartTotal.innerText = "Total: "+"$" + total.toFixed(2);
-    cartCount.innerText = itemCount;
-
-    toggleCartIconAndMessage();
+  toggleCartIconAndMessage();
 }
 
 function toggleCartIconAndMessage() {
-    const cartIconDisplay = cart.length === 0 ? "none" : "block";
-    const emptyMessageDisplay = cart.length === 0 ? "block" : "none";
+  const cartIconDisplay = cart.length === 0 ? "none" : "block";
+  const emptyMessageDisplay = cart.length === 0 ? "block" : "none";
 
-    document.querySelector(".cart__icon").style.display = cartIconDisplay;
-    document.querySelector(".modal__empty-message").style.display = emptyMessageDisplay;
+  document.querySelector(".cart__icon").style.display = cartIconDisplay;
+  document.querySelector(".modal__empty-message").style.display =
+    emptyMessageDisplay;
 }
 
-function createCartItemHTML(item){
+function createCartItemHTML(item) {
   return ` 
   <div class="cart-item" data-item="product-cart-item" data-item-id="b1fa86de-23ec-4ade-8e0a-3cf2e0cae1e9">
    <div class="cart-item-inner">
@@ -94,12 +107,16 @@ function createCartItemHTML(item){
                   onchange="changeQuantity('${item.id}', this.value)"
                   >
                   <div class="input-quantity__arrows">
-                     <div class="arrow_up" data-sub-item="quantity-up"  onclick="changeQuantity('${item.id}', ${item.quantity+1})">
+                     <div class="arrow_up" data-sub-item="quantity-up"  onclick="changeQuantity('${
+                       item.id
+                     }', ${item.quantity + 1})">
                         <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M5.35067 0.155633C5.33527 0.138307 5.31853 0.122147 5.30057 0.107295C5.1069 -0.0528817 4.81533 -0.0312402 4.64933 0.155633L0.111189 5.26432C0.0394387 5.34509 -4.76276e-07 5.44797 -4.85577e-07 5.55435C-5.07094e-07 5.80047 0.206781 6 0.461859 6L9.53813 6C9.64838 6 9.755 5.96194 9.83871 5.89271C10.0324 5.73253 10.0548 5.4512 9.8888 5.26432L5.35067 0.155633Z" fill="#9199AB"></path>
                         </svg>
                      </div>
-                     <div class="arrow--down" data-sub-item="quantity-down" onclick="changeQuantity('${item.id}', ${item.quantity-1})">
+                     <div class="arrow--down" data-sub-item="quantity-down" onclick="changeQuantity('${
+                       item.id
+                     }', ${item.quantity - 1})">
                         <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M5.35067 0.155633C5.33527 0.138307 5.31853 0.122147 5.30057 0.107295C5.1069 -0.0528817 4.81533 -0.0312402 4.64933 0.155633L0.111189 5.26432C0.0394387 5.34509 -4.76276e-07 5.44797 -4.85577e-07 5.55435C-5.07094e-07 5.80047 0.206781 6 0.461859 6L9.53813 6C9.64838 6 9.755 5.96194 9.83871 5.89271C10.0324 5.73253 10.0548 5.4512 9.8888 5.26432L5.35067 0.155633Z" fill="#9199AB">
                            </path>
@@ -108,11 +125,15 @@ function createCartItemHTML(item){
                   </div>
                </div>
             </div>
-            <div data-sub-item="amount" class="cart-item-amount ui-text" data-amount="800">$${(item.price * item.quantity).toFixed(2)}
+            <div data-sub-item="amount" class="cart-item-amount ui-text" data-amount="800">$${(
+              item.price * item.quantity
+            ).toFixed(2)}
             </div>
          </div>
       </div>
-      <div data-sub-item="remove" class="remove-item" onclick="removeItem('${item.id}')">
+      <div data-sub-item="remove" class="remove-item" onclick="removeItem('${
+        item.id
+      }')">
          <svg width="14" height="18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M10 2h3.6c.2 0 .4.2.4.4v1.2c0 .2-.2.4-.4.4H.4C.2 4 0 3.9 0 3.6V2.4c0-.2.2-.4.4-.3h3.7V2L4.9.3c.1-.2.2-.3.4-.3h3.5c.1 0 .3.1.4.2l.8 1.7V2zM1.8 16.1c.1 1 1 1.9 2 1.9h6.3c1.1 0 1.9-.8 2-1.9l1-11.1H1l.8 11.1zM12 6l-.8 10.1c0 .5-.5.9-1 .9H3.8c-.5 0-1-.4-1-.9L2 6h10zM5 8.1h1v6H5v-6zm4 0H8v6h1v-6z" fill="#9199AB">
             </path>
@@ -120,40 +141,63 @@ function createCartItemHTML(item){
       </div>
    </div>
 </div>
-  `
-} 
+  `;
+}
 
 function changeQuantity(id, amount) {
-    const item = cart.find(i => i.id === id);
-    if (!item) return;
+  const item = cart.find((i) => i.id === id);
+  if (!item) return;
 
-    const newQuantity = parseInt(amount);
-    if (newQuantity > 0) {
-        item.quantity = newQuantity;
-    } else {
-        item.quantity = 1; 
-    }
+  const newQuantity = parseInt(amount);
+  if (newQuantity > 0) {
+    item.quantity = newQuantity;
+  } else {
+    item.quantity = 1;
+  }
 
-    saveCart();
-    updateCart();
+  saveCart();
+  updateCart();
 }
 
 function togglePromoCodeInput() {
-  const promoCodeInputContainer = document.querySelector('.promo-code-input-container');
-  promoCodeInputContainer.classList.toggle('close');
+  promoCodeInputContainer.classList.toggle("close");
 }
 
+promoCodeApplyBtn.addEventListener("click", () => {
+  switch (promocodeInput.value) {
+    case "MARGO_15":
+      priceCoeficient = 0.85;
+      break;
+
+    case "MARGO_20":
+      priceCoeficient = 0.8;
+      break;
+
+    case "MARGO_25":
+      priceCoeficient = 0.75;
+      break;
+
+    case "MARGO_50":
+      priceCoeficient = 0.5;
+      break;
+
+    default:
+      priceCoeficient = 1;
+      break;
+  }
+  updateTotal();
+});
+
 function saveCart() {
-    localStorage.setItem("cart", JSON.stringify(cart));
+  localStorage.setItem("cart", JSON.stringify(cart));
 }
 
 updateCart();
 
 cartIcon.addEventListener("click", () => {
-    cartModal.style.display = "block";
+  cartModal.style.display = "block";
 });
 
 closeCart.addEventListener("click", () => {
-    cartModal.style.display = "none";
+  cartModal.style.display = "none";
 });
-
