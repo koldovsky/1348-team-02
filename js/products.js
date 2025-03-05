@@ -27,5 +27,11 @@ const PRODUCTS_LIST =  [
     { id: 21, category: "fish", name: "DUCCA Air Pump", price: 42.00, image: "assets/images/shop-items/for-fish/ducca-air-pump.png" },
     { id: 22, category: "fish", name: "TISCO 50 Liter Aquarium", price: 70.00, image: "assets/images/shop-items/for-fish/tisco-50-liter-aquarium.png" },
     { id: 23, category: "fish", name: "VEGA Fish Castle", price: 6.00, image: "assets/images/shop-items/for-fish/vega-fish-castle.png" },
-    { id: 24, category: "fish", name: "TISCO Landing Net", price: 4.00, image: "assets/images/shop-items/for-fish/tisco-landing-net.png" }
+    { id: 24, category: "fish", name: "TISCO Landing Net", price: 4.00, image: "assets/images/shop-items/for-fish/tisco-landing-net.png" },
+
+    { id: 25, category: "trending", name: "DORA Metal Pet Brush", price: 15.00, image: "assets/images/carousel-trending-products/metal-brush.png" },
+    { id: 26, category: "trending", name: "Kitten's Heaven Set", price: 12.00, image: "assets/images/carousel-trending-products/kittens.png" },
+    { id: 27, category: "trending", name: "OPTY Pet Carrier", price: 8.00, image: "assets/images/carousel-trending-products/opty-plastic-bowl.png" },
+    { id: 28, category: "trending", name: "AGA Rope Toy", price: 5.00, image: "assets/images/carousel-trending-products/dura-woven-toy.png" },
+    { id: 29, category: "trending", name: "DORA Per Carrier", price: 23.00, image: "assets/images/carousel-trending-products/dora-pet-carrier.png" }
 ];
