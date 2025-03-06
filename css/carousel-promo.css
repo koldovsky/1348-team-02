@@ -135,42 +135,44 @@
     margin-top: 40px;
     text-align: center;
     overflow: hidden;
+    position: relative;
+    width: 100%;
 
     .promo__carousel {
       display: flex;
       align-items: center;
+      overflow: hidden;
       justify-content: center;
-      gap: 15px;
+      gap: 30px;
+      width: 100%;
       padding: 10px;
-      overflow-x: auto;
       position: relative;
       scrollbar-width: none;
       scroll-snap-type: x mandatory;
+      transition: transform 0.5s ease-in-out;
     }
 
     .promo__brand {
-      flex: 0 0 100%;
-      max-width: 242px;
+      flex: 0 0 85%;
+      max-width: 290px;
       height: 141px;
       background-color: var(--color-bg-button);
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;
-      transition: transform 0.3s ease;
+      transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
     }
 
-    /* Show 3 brands on tablets */
     @media (min-width: 768px) {
       .promo__brand {
-        flex: 0 0 calc(100% / 3);
+        flex: 0 0 calc(80% / 3);
         max-width: 240px;
       }
     }
 
-    /* Show all brands in one row on desktop */
     @media (min-width: 1024px) {
       .promo__brand {
-        flex: 0 0 calc(100% / 6);
+        flex: 0 0 calc(90% / 7);
         max-width: 160px;
       }
     }
@@ -202,7 +204,7 @@
 
   .promo__arrow {
     position: absolute;
-    top: 50%;
+    bottom: 30%;
     transform: translateY(-50%);
     z-index: 2;
     background: var(--color-text-primary);
@@ -230,22 +232,45 @@
   }
 
   .promo__arrow--left {
-    left: 10px;
+    left: 30px;
 
     &::before {
       transform: rotate(-135deg);
     }
 
-    @media (max-width: 768px) {
+    @media (min-width: 768px) {
       left: 20px;
+    }
+
+    @media(min-width: 1440px) {
+      left: 70px;
+    }
+
+    @media(min-width: 2560px) {
+      left: 670px;
+    }
+    @media(min-width: 2800px) {
+      left: 780px;
     }
   }
 
   .promo__arrow--right {
-    right: 10px;
+    right: 30px;
 
-    @media (max-width: 768px) {
+    @media (min-width: 768px) {
       right: 20px;
+    }
+
+
+    @media(min-width: 1440px) {
+      right: 70px;
+    }
+
+    @media(min-width: 2560px) {
+      right: 670px;
+    }
+    @media(min-width: 2800px) {
+      right: 780px;
     }
   }
 }

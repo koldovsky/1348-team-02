@@ -2,6 +2,15 @@
 @import "./global.css";
 @import "./index.cart.css";
 @import "./header.css";
-@import "./promotion.partial.css";
+@import "./promotion.css";
+@import "./carousel-promo.css";
+@import "./food.css";
 @import "./index.our-shop.css";
 @import "./components.css";
+@import "./index.carousel-new-arrivals.css";
+@import "testimonials.css";
+@import "./promo-banners.css";
+@import "./carousel-products.css";
+@import "./carousel-trending-products.css";
+
+@import "./index.footer.css";

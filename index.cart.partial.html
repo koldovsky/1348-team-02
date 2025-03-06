@@ -1,83 +1,275 @@
 <!-- Margo Matskevych  -->
-<section>
-    <link rel="stylesheet" href="css/index.cart.css"/>
-    <div id="cartIcon" style="display: none">
-        🛒
-        <div id="cartCount">0</div>
+<section class="--body-font">
+  <link rel="stylesheet" href="css/index.cart.css" />
+  <link rel="stylesheet" href="css/global.css" />
+
+  <div class="cart__icon">
+    <div class="cart__icon-inner">
+      <svg
+        viewBox="0 0 24 30"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        class="svg_2UK ui-cart-icon-color--light_3Gm"
+      >
+        <path
+          d="M1 10C1 8.89543 1.89543 8 3 8H21C22.1046 8 23 8.89543 23 10V25C23 27.2091 21.2091 29 19 29H5C2.79086 29 1 27.2091 1 25V10Z"
+          stroke-width="2"
+        ></path>
+        <path
+          d="M17 12V6C17 3.23858 14.7614 1 12 1V1C9.23858 1 7 3.23858 7 6V12"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </svg>
+    </div>
+    <div class="counter_3pK circle_2cg cart__count">0</div>
+  </div>
+
+  <div data-sub-item="title" class="order-title" >Products</div>
+
+  <!-- <section class="products">
+    <div
+      class="product"
+      data-id="1"
+      data-name="Metal Pet Brush"
+      data-price="5"
+      data-image="metal-brush.png"
+    >
+      <img
+        src="./assets/images/metal-brush.png"
+        alt="Metal Pet Brush"
+        class="product__image"
+      />
+      <h3 class="product__name">Metal Brush</h3>
+      <span class="product__price">5.00</span>
+      <button class="product__btn">Add to Cart</button>
     </div>
 
-    <section class="products">
-        <div
-                class="product"
-                data-id="1"
-                data-name="Metal Pet Brush"
-                data-price="5"
-                data-image="metal-brush.png"
-        >
-            <img
-                    src="./assets/images/metal-brush.png"
-                    alt="Metal Pet Brush"
-                    style="width: 250px"
-            />
-            <h3>Metal Brush</h3>
-            <span class="item-price">5.00</span>
-            <button class="addToCartBtn">Add to Cart</button>
-        </div>
-
-        <div
-                class="product"
-                data-id="2"
-                data-name="AGA Rope Toy"
-                data-price="5"
-                data-image="kittens.png"
-        >
-            <img
-                    src="./assets/images/kittens.png"
-                    alt="Kitten's Heaven Set"
-                    style="width: 250px"
-            />
-            <h3>Kitten's Heaven Set</h3>
-            <span class="item-price">7.00</span>
-            <button class="addToCartBtn">Add to Cart</button>
-        </div>
-    </section>
-
-    <div id="cartModal" class="modal">
-        <div class="modal-content">
-            <span id="closeCart">&times;</span>
-            <h2>Shopping cart</h2>
-            <div id="emptyMessage" style="display: none">Shopping cart is empty</div>
-
-            <div id="cartItems"></div>
-            <p><strong>Total:</strong>$<span id="cartTotal">0,00</span></p>
-            <form id="orderForm" class="order-form">
-                <label for="text">Name</label>
-                <input type="text" id="text" placeholder="Your name" required/>
-
-                <label for="email">Email</label>
-                <input
-                        type="email"
-                        id="email"
-                        placeholder="Your email address"
-                        onchange="changeQuantity(1, this.value)"
-                        value="1"
-                        required
-                />
-
-                <label for="phone">Phone</label>
-                <input type="phone" id="phone" placeholder="Your phone" required/>
-
-                <label for="comment">Comment</label>
-                <input
-                        type="comment"
-                        id="comment"
-                        placeholder="Your comment"
-                        required
-                />
-            </form>
-            <button id="orderBtn" class="order-btn">Order</button>
-        </div>
+    <div
+      class="product"
+      data-id="2"
+      data-name="AGA Rope Toy"
+      data-price="5"
+      data-image="kittens.png"
+    >
+      <img
+        src="./assets/images/kittens.png"
+        alt="Kitten's Heaven Set"
+        class="product__image"
+      />
+      <h3 class="product__name">Kitten's Heaven Set</h3>
+      <span class="product__price">7.00</span>
+      <button class="product__btn">Add to Cart</button>
     </div>
+  </section> -->
 
+  <div id="cartModal" class="cart-modal w-grid__item w-grid__item--top">
+    <div class="cart-modal__content">
+      <div class="cart-modal__title-wrapper">
+        <div class="cart-modal__title">Shopping cart</div>
+  
+        <div id="closeCart" class="cart-modal__close">
+          <span class="cart-modal__close-icon">
+            <svg
+              width="100"
+              viewBox="0 0 24 28"
+              xmlns="http://www.w3.org/2000/svg"
+              height="100%"
+            >
+              <path
+                d="M19.7 18.3c.4.4.4 1 0 1.4-.2.2-.4.3-.7.3-.3 0-.5-.1-.7-.3L12 13.4l-6.3 6.3c-.4.4-1 .4-1.4 0-.2-.2-.3-.4-.3-.7 0-.3.1-.5.3-.7l6.3-6.3-6.3-6.3c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0l6.3 6.3 6.3-6.3c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4L13.4 12l6.3 6.3z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </span>
+        </div>
+      </div>
+      <div class="cart-modal__content__inner">
+        <div
+        data-sub-item="title"
+        class="title order-details__title_3MN --body-font"
+      >
+        Products
+      </div>
+        <div
+          id="emptyMessage"
+          class="cart-modal__empty-message"
+          style="display: none"
+        >
+          Shopping cart is empty
+        </div>
+        <div id="cartItems" class="cart-modal__items"></div>
+        <div class="price-details-footer price-details-footer--with-promo-code">
+          <div
+            data-sub-item="product-promo-code"
+            class="promo-code"
+            style="display: block"
+          >
+            <button
+              data-sub-item="promo-code-button"
+              class="promo-code-button"
+              type="button"
+              onclick="togglePromoCodeInput()"
+            >
+              Promo code
+            </button>
+            <div
+              class="promo-code-input-container close"
+              data-sub-item="promo-code-input-container"
+            >
+              <div class="promo-code-input-group">
+                <div class="promo-code-input-group-input--container">
+                  <input
+                    type="text"
+                    data-sub-item="promo-code-input"
+                    class="promo-code-input-group-input"
+                    id="promo-code-input"
+                    placeholder="Enter promo code"
+                    maxlength="20"
+                  /><button
+                    data-sub-item="promo-code-discard-button"
+                    id="promo-code-discard-button"
+                    class="promo-code-input-group-button--discard_"
+                    type="button"
+                    style="display: none"
+                  >
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M0.558058 0.558058C0.802136 0.313981 1.19786 0.313981 1.44194 0.558058L6 5.11612L10.5581 0.558058C10.8021 0.313981 11.1979 0.313981 11.4419 0.558058C11.686 0.802136 11.686 1.19786 11.4419 1.44194L6.88388 6L11.4419 10.5581C11.686 10.8021 11.686 11.1979 11.4419 11.4419C11.1979 11.686 10.8021 11.686 10.5581 11.4419L6 6.88388L1.44194 11.4419C1.19786 11.686 0.802136 11.686 0.558058 11.4419C0.313981 11.1979 0.313981 10.8021 0.558058 10.5581L5.11612 6L0.558058 1.44194C0.313981 1.19786 0.313981 0.802136 0.558058 0.558058Z"
+                        fill="#646E82"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+                <button
+                  data-sub-item="promo-code-apply-button"
+                  class="promo-code-input-group-button"
+                  id="promo-code-apply-button"
+                  type="button"
+                  style="display: block"
+                >
+                  OK
+                </button>
+              </div>
+              <div
+                data-sub-item="promo-code-validation-text"
+                class="promo-code-validation-text"
+              ></div>
+            </div>
+          </div>
+          <div
+            data-sub-item="price-details"
+            class="--body-font price-details"
+            style="display: flex"
+          >
+            <div class="price-details__column">
+              <span
+                class="price-details__cell"
+                data-sub-item="sub-total-title"
+                style="display: none"
+                >Subtotal: </span
+              ><span
+                class="price-details__cell"
+                data-sub-item="promo-code-title"
+                data-phrase='{"phrase":"Promo code"}'
+                style="display: none"
+                >Promo code: </span
+              ><span
+                class="price-details__cell"
+                data-sub-item="shipping-title"
+                style="display: none"
+                >Shipping cost: </span
+              ><span
+                class="price-details__cell total_nvd"
+                id="cartTotal"
+                >Total: </span
+              >
+            </div>
+            <div class="price-details__column">
+              <span
+                class="price-details__cell"
+                data-sub-item="sub-total-price"
+                data-test="sub-total"
+                style="display: none"
+                >0.00</span
+              ><span
+                class="price-details__cell"
+                data-sub-item="promo-code-price"
+                data-test="promo-code-price"
+                style="display: none"
+                >0</span
+              ><span
+                class="price-details__cell --body-font"
+                data-sub-item="shipping-price"
+                data-test="shipping-price"
+                style="display: none"
+                >0.00</span
+              ><span
+                class="price-details__cell --body-font"
+                data-sub-item="total-price"
+                data-test="total"
+              ></span>
+            </div>
+          </div>
+        </div>
+  
+        <form id="orderForm" class="cart-modal__order-form">
+          <label for="text" class="cart-modal__label">
+            Name<span data-sub-item="required" class="required-star_176"> *</span>
+          </label>
+          <input
+            type="text"
+            id="text"
+            class="cart-modal__input"
+            placeholder="Your name"
+            required
+          />
+  
+          <label for="email" class="cart-modal__label">
+            Email<span data-sub-item="required" class="required-star_176"> *</span>
+          </label>
+          <input
+            type="email"
+            id="email"
+            class="cart-modal__input"
+            placeholder="Your email address"
+            required
+          />
+  
+          <label for="phone" class="cart-modal__label">
+            Phone<span data-sub-item="required" class="required-star_176"> *</span>
+          </label>
+          <input
+            type="phone"
+            id="phone"
+            class="cart-modal__input"
+            placeholder="Your phone"
+            required
+          />
+  
+          <label for="comment" class="cart-modal__label">
+            Comment<span data-sub-item="required" class="required-star_176"> *</span>
+          </label>
+          <textarea
+            type="text"
+            id="comment"
+            class="cart-modal__input textarea"
+            placeholder="Your comment"
+            required
+            ></textarea>
+        </form>
+        <button id="orderBtn" class="cart-modal__order-btn">Order</button>
+      </div>
+    </div>
+  
     <script src="js/index.cart.js"></script>
-</section>
+  </section>
