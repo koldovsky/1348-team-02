@@ -10,7 +10,7 @@
     cursor: pointer;
 
     &:hover {
-        transition: color 0.7s ease;
+        transition: color 0.4s ease;
         color: var(--price-color);
         background-color: var(--used-button-color);
     }

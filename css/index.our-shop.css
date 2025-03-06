@@ -36,8 +36,12 @@
             font-family:  var(--body-font);
             color: var(--subtitle-color);
 
-            &:hover, &:visited {
+            &:hover{
                 color: var(--body-color);
+            }
+            &:visited{
+                color: var(--body-color);
+                border-bottom: 1px solid var(--color-secondary);
             }
         }
     }
