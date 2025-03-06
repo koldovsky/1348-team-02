@@ -1,11 +1,11 @@
 .our-shop{
 
     .our-shop__title{
+        margin: 0 0 20px 0;
         font-family: var(--title-font);
-        font-optical-sizing:auto;
+        font-optical-sizing: auto;
         font-size: 50px;
         color: var(--title-color);
-        margin: 0px;
         text-align: center;
     }
     .our-shop__bone-img {
@@ -14,21 +14,36 @@
         margin: 0 auto;
     }
     .our-shop__description{
+        margin: 30px 0 55px 0;
         font-size: 19px;
         text-align: center;
-        color: var(--body-color);
+        font-family: var(--body-font);
+        color: var(--subtitle-color);
     }
     .our-shop__categories-list{
+        position: 0 1100px;
         list-style: none;
-        display: inline-flex;
+        border-bottom: 1px solid var(--line-color);
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
         align-items: center;
 
         .our-shop__categories-list-item{
             font-size: 17px;
-            color: var(--title-color);
+            font-weight: bold;
+            padding: 15px 20px;
+            font-family:  var(--body-font);
+            color: var(--subtitle-color);
+
+            &:hover, &:visited {
+                color: var(--body-color);
+            }
         }
     }
+
     .our-shop__item-container{
+        margin: 30px 0 0 0;
         display: grid;
         gap: 5px;
         align-items: center;
@@ -39,19 +54,30 @@
         @media (min-width: 991px){
             grid-template-columns: 1fr 1fr 1fr 1fr;
         }
-  
-        .our-shop__item {
-            padding: 5px;
 
+        .our-shop__item {
+            padding: 0 15px;
+
+            .our-shop__item-pic{
+                height: 235.3px;
+                width: 235.3px;
+                
+            }
             .our-shop__item-name{
-                color: var(--body-color);
+                margin: 24px 0 0 0;
+                font-size: auto;
+                font-weight: 400;
+                font-family: var(--body-font);
+                color: var(--subtitle-color);
             }
             .our-shop__item-price{
-                color: var(--price-color);
+                margin: 15px 0 29px 0;
+                font-size: 20px;
+                font-family: var(--body-font);
                 font-weight: bold;
+                color: var(--price-color);
             }
         }
     }
-    
 }
 

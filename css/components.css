@@ -1,14 +1,16 @@
 .button {
+    font-family: var(--body-font);
     font-weight: bold;
     font-size: 16.5px;
     display: inline-block;
-    padding: 5px 15px;
+    padding: 13px 25px;
     color: var(--button-text-color);
     background-color: var(--button-color);
-    border-radius: 20px;
+    border-radius: 30px;
     cursor: pointer;
 
-    &:visited {
+    &:hover {
+        transition: color 0.7s ease;
         color: var(--price-color);
         background-color: var(--used-button-color);
     }

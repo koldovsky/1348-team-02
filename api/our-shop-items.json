@@ -1,0 +1,162 @@
+{
+  "for_dogs": [
+    {
+      "id": "1",
+      "image": "assets/images/shop-items/for-dogs/doggy-fun-set.png",
+      "title": "DOGGY Fun Set",
+      "price": 6.0
+    },
+    {
+      "id": "2",
+      "image": "assets/images/shop-items/for-dogs/duna-pillow-bed.png",
+      "title": "DUNA Pillow Bed",
+      "price": 10.0
+    },
+    {
+      "id": "3",
+      "image": "assets/images/shop-items/for-dogs/aga-retractable-leash.png",
+      "title": "AGA Retractable Leash",
+      "price": 33.0
+    },
+    {
+      "id": "4",
+      "image": "assets/images/shop-items/for-dogs/doggy-2-bunch-toy.png",
+      "title": "DOGGY 2-Bunch Toy",
+      "price": 5.0
+    }
+  ],
+  "for_cats": [
+    {
+      "id": "5",
+      "image": "assets/images/shop-items/for-cats/vitalife-2-bowls-set.png",
+      "title": "AGA Mice Set",
+      "price": 3.0
+    },
+    {
+      "id": "6",
+      "image": "assets/images/shop-items/for-cats/aga-mice-set.png",
+      "title": "VITALIFE 2-Bowls Set",
+      "price": 9.0
+    },
+    {
+      "id": "7",
+      "image": "assets/images/shop-items/for-cats/aga-leash&collar.png",
+      "title": "AGA Leash & Collar",
+      "price": 13.0
+    },
+    {
+      "id": "8",
+      "image": "assets/images/shop-items/for-cats/duna-gray-bed.png",
+      "title": "DUNA Gray Bed",
+      "price": 25.0
+    }
+  ],
+
+  "for_parrots": [
+    {
+      "id": "9",
+      "image": "assets/images/shop-items/for-parrots/dora-hanging-mirror.png",
+      "title": "DORA Hanging Mirror",
+      "price": 6.0
+    },
+    {
+      "id": "10",
+      "image": "assets/images/shop-items/for-parrots/vetra-hanging-nest.png",
+      "title": "VETRA Hanging Nest",
+      "price": 8.0
+    },
+    {
+      "id": "11",
+      "image": "assets/images/shop-items/for-parrots/dora-wood-swing.png",
+      "title": "DORA Wood Swing",
+      "price": 7.0
+    },
+    {
+      "id": "12",
+      "image": "assets/images/shop-items/for-parrots/opty-wooden-stand.png",
+      "title": "OPTY Wooden Stand",
+      "price": 14.0
+    }
+  ],
+
+  "for_rabbits": [
+    {
+      "id": "13",
+      "image": "assets/images/shop-items/for-rabbits/sera-purple-collar.png",
+      "title": "SERA Purple Collar",
+      "price": 2.0
+    },
+    {
+      "id": "14",
+      "image": "assets/images/shop-items/for-rabbits/aga-clinking-toy.png",
+      "title": "AGA Clinking Toy",
+      "price": 2.0
+    },
+    {
+      "id": "15",
+      "image": "assets/images/shop-items/for-rabbits/harno-rabbit-cage.png",
+      "title": "HARNO Rabbit Cage",
+      "price": 60.0
+    },
+    {
+      "id": "16",
+      "image": "assets/images/shop-items/for-rabbits/dora-rabbit-brush.png",
+      "title": "DORA Rabbit Brush",
+      "price": 10.0
+    }
+  ],
+
+  "for_hamsters": [
+    {
+      "id": "17",
+      "image": "assets/images/shop-items/for-hamsters/aga-bowl-for-hamsters.png",
+      "title": "AGA Bowl for Hamsters",
+      "price": 2.0
+    },
+    {
+      "id": "18",
+      "image": "assets/images/shop-items/for-hamsters/tisco-toy-wheel.png",
+      "title": "TISCO Toy Wheel",
+      "price": 2.0
+    },
+    {
+      "id": "19",
+      "image": "assets/images/shop-items/for-hamsters/strco-rainbow-balls.png",
+      "title": "STERCO Rainbow Balls",
+      "price": 60.0
+    },
+    {
+      "id": "20",
+      "image": "assets/images/shop-items/for-hamsters/aga-green-cage.png",
+      "title": "AGA Green Cage",
+      "price": 10.0
+    }
+  ],
+
+  "for_fish": [
+    {
+      "id": "21",
+      "image": "assets/images/shop-items/for-fish/ducca-air-pump.png",
+      "title": "DUCCA Air Pump",
+      "price": 42.0
+    },
+    {
+      "id": "22",
+      "image": "assets/images/shop-items/for-fish/tisco-50-liter-aquarium.png",
+      "title": "TISCO 50 Liter Aquarium",
+      "price": 70.0
+    },
+    {
+      "id": "23",
+      "image": "assets/images/shop-items/for-fish/vega-fish-castle.png",
+      "title": "VEGA Fish Castle",
+      "price": 6.0
+    },
+    {
+      "id": "24",
+      "image": "assets/images/shop-items/for-fish/tisco-landing-net.png",
+      "title": "TISCO Landing Net",
+      "price": 4.0
+    }
+  ]
+}

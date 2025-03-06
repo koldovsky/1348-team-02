@@ -11,7 +11,6 @@ PRODUCTS_LIST.forEach((element, index)=>{
         class="our-shop__item"
     >
       <img
-        width="270"
         class="our-shop__item-pic"
         src="${element.image}"
         alt="${element.name}"
