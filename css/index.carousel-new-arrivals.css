@@ -12,31 +12,39 @@
 }
 
 .carousel-new-arrivals__title {
-  font-size: 24px;
+  font-family: var(--title-font);
+  font-size: 50px;
+  color: var(--title-color);
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .carousel-new-arrivals__icon {
+  width: 70px;
   display: block;
   margin: 0 auto 10px;
+  padding-bottom: 20px;
 }
 
 .carousel-new-arrivals__description {
+  font-family:var(--body-font);
   font-size: 16px;
-  color: #555;
-  margin-bottom: 20px;
+  color: var(--subtitle-color);
+  margin-bottom: 40px;
+  font-weight: bold;
 }
 
 .carousel-new-arrivals__items {
   display: flex;
-  gap: 15px;
+  gap: 25px;
+  scroll-behavior: smooth;
+  padding-bottom: 20px;
   transition: transform 0.5s ease-in-out;
   justify-content: center;
 }
 
 .carousel-new-arrivals__item {
-  flex: 0 0 calc(100% / 4 - 15px);
+  flex: 0 0 280px;
   max-width: 280px;
   background: #fff;
   border-radius: 8px;
@@ -44,7 +52,6 @@
   padding: 15px;
   text-align: center;
 }
-
 .carousel-new-arrivals__product-image {
   width: 100%;
   height: auto;
@@ -53,23 +60,26 @@
 }
 
 .carousel-new-arrivals__link {
+  font-family:var(--body-font) ;
+  color: var(--subtitle-color);
   display: block;
   font-size: 16px;
-  color: #333;
   text-decoration: none;
-  font-weight: bold;
-  margin-bottom: 5px;
+  margin:24px 0 0;
+  text-align: left;
 }
 
 .carousel-new-arrivals__link:hover {
-  color: #f97316;
+  color: var(--price-color);
 }
 
 .carousel-new-arrivals__price {
+  font-family:var(--body-font);
   font-size: 18px;
-  color: red; /* Червоний колір для ціни */
+  color:var(--price-color);
   font-weight: bold;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .carousel-new-arrivals__button {
