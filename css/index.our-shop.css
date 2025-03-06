@@ -43,8 +43,9 @@
     }
 
     .our-shop__item-container{
-        margin: 30px 0 0 0;
+        margin: 30px auto 0;
         display: grid;
+        max-width: 1200px;
         gap: 5px;
         align-items: center;
 
@@ -56,13 +57,8 @@
         }
 
         .our-shop__item {
-            padding: 0 15px;
+            padding: 5px 15px;
 
-            .our-shop__item-pic{
-                height: 235.3px;
-                width: 235.3px;
-                
-            }
             .our-shop__item-name{
                 margin: 24px 0 0 0;
                 font-size: auto;
