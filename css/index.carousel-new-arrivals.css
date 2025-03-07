@@ -129,16 +129,24 @@
 .carousel-new-arrivals__arrow:hover {
   color:var(--color-text-primary);
 }
-
 .carousel-new-arrivals__arrow--left {
-  left: 0;
-
+  left: -90px;
 }
 
 .carousel-new-arrivals__arrow--right {
-  right: 0;
+  right: -90px;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 992px) {
+  .carousel-new-arrivals__arrow--left {
+    left: 5px;
+  }
+
+  .carousel-new-arrivals__arrow--right {
+    right: 5px;
+  }
+}
+@media (max-width: 992) {
   .carousel-new-arrivals__item {
     flex: 0 0 80%;
   }
