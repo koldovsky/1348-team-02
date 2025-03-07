@@ -1,9 +1,21 @@
 const ourStoreProductListSelector = document.querySelector(
   ".our-shop-item-list"
 );
+
+//default section
+let style = document.createElement("style");
+style.innerHTML = `
+#dog {
+  transition: color 0.5s ease;
+  color: var(--body-color);
+  border-bottom: 2px solid var(--color-secondary);
+}`;
+document.head.appendChild(style);
 render(1);
 
 const categories = document.querySelector(".our-shop__categories-list");
+
+let previousStyle = null;
 
 categories.addEventListener("click", (event) => {
   event.preventDefault();
@@ -12,6 +24,19 @@ categories.addEventListener("click", (event) => {
 
   const category = clickedElement.id;
   if (!category) return;
+
+  if (previousStyle) {
+    previousStyle.remove();
+  }
+  
+  style.innerHTML = `
+  #${category} {
+    transition: color 0.5s ease;
+    color: var(--body-color);
+    border-bottom: 2px solid var(--color-secondary);
+  }`;
+  document.head.appendChild(style);
+  previousStyle = style;
 
   let index;
   switch (category) {
@@ -29,30 +54,36 @@ categories.addEventListener("click", (event) => {
 function render(index) {
   let htmlPage = `<div class="our-shop__item-container">`;
 
-  for (let i = -1; i < 3; i++) {
+  for (let i = 0; i < 4; i++) {
     if (!PRODUCTS_LIST[index + i]) break;
 
     htmlPage += `
             <article class="our-shop__item">
                 <img
                     class="our-shop__item-pic"
-                    src="${PRODUCTS_LIST[index + i].image}"
-                    alt="${PRODUCTS_LIST[index + i].name}"
+                    src="${PRODUCTS_LIST[index + i - 1].image}"
+                    alt="${PRODUCTS_LIST[index + i - 1].name}"
                 />
                 <a href="#"><h3 class="our-shop__item-name">${
-                  PRODUCTS_LIST[index + i].name
+                  PRODUCTS_LIST[index + i - 1].name
                 }</h3></a>
-                <p class="our-shop__item-price">$${
-                  PRODUCTS_LIST[index + i].price
-                }</p>
-                <a href="" class="our-shop__button button" onclick="addToCart(${
-                  PRODUCTS_LIST[index + i].id
+                <p class="our-shop__item-price">$${PRODUCTS_LIST[
+                  index + i - 1
+                ].price.toFixed(2)}</p>
+                <a href="#" class="our-shop__button button" onclick="addToCart(${
+                  PRODUCTS_LIST[index + i - 1].id
                 })">
                     Add to Cart
                 </a>
             </article>`;
   }
-
   htmlPage += `</div>`;
+
+  document.addEventListener("click", function (event) {
+    if (event.target.closest(".our-shop__button")) {
+      event.preventDefault();
+    }
+  });
+
   ourStoreProductListSelector.innerHTML = htmlPage;
 }
