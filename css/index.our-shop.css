@@ -2,7 +2,8 @@
   margin: 0 0 20px 0;
   font-family: var(--title-font);
   font-optical-sizing: auto;
-  font-size: 50px;
+  font-size: clamp(30px, 7vw, 50px);
+  
   color: var(--title-color);
   text-align: center;
 }
@@ -27,10 +28,14 @@
   border-bottom: 1px solid var(--line-color);
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
   overflow: auto;
+
+  @media (min-width: 700px) {
+    justify-content: center;
+  }
 
   .our-shop__categories-list-item {
     font-size: 17px;
@@ -71,7 +76,7 @@
       font-family: var(--body-font);
       color: var(--subtitle-color);
     }
-    
+
     .our-shop__item-price {
       margin: 15px 0 29px 0;
       font-size: 20px;
