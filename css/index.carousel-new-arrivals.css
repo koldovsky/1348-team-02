@@ -1,18 +1,16 @@
 .carousel-new-arrivals {
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1200px;
+  display: flex;
   padding: 40px 20px;
   text-align: center;
-  position: relative;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .carousel-new-arrivals__container {
   position: relative;
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 0 40px;
-  justify-content: center;
 }
 
 .carousel-new-arrivals__title {
@@ -31,7 +29,7 @@
 }
 
 .carousel-new-arrivals__description {
-  font-family:var(--body-font);
+  font-family: var(--body-font);
   font-size: 19px;
   color: var(--subtitle-color);
   margin-bottom: 40px;
@@ -41,20 +39,23 @@
 .carousel-new-arrivals__items {
   display: flex;
   gap: 25px;
-  scroll-behavior: smooth;
-  padding-bottom: 20px;
   justify-content: center;
+  align-items: stretch;
+  padding: 20px 0;
+  width: 100%;
+  overflow: hidden; /* Прибираємо scroll */
 }
 
 .carousel-new-arrivals__item {
-  flex: 0 0 280px;
-  max-width: 280px;
-  background:var(--white);
+  flex: 1 1 auto; /* Гнучкий розмір */
+  max-width: 100%;
+  background: var(--white);
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 15px;
   text-align: center;
 }
+
 .carousel-new-arrivals__product-image {
   width: 100%;
   height: auto;
@@ -63,12 +64,12 @@
 }
 
 .carousel-new-arrivals__link {
-  font-family:var(--body-font) ;
+  font-family: var(--body-font);
   color: var(--subtitle-color);
   display: block;
   font-size: 16px;
   text-decoration: none;
-  margin:24px 0 0;
+  margin: 24px 0 0;
   text-align: left;
 }
 
@@ -77,9 +78,9 @@
 }
 
 .carousel-new-arrivals__price {
-  font-family:var(--body-font);
+  font-family: var(--body-font);
   font-size: 18px;
-  color:var(--price-color);
+  color: var(--price-color);
   font-weight: bold;
   margin-bottom: 10px;
   text-align: left;
@@ -87,31 +88,30 @@
 
 .carousel-new-arrivals__button {
   display: block;
-  font-family:var(--body-font);
-  font-size:17px;
-  font-weight:bold;
-  background:var(--button-color);
+  font-family: var(--body-font);
+  font-size: 17px;
+  font-weight: bold;
+  background: var(--button-color);
   color: var(--button-text-color);
   padding: 8px 16px;
   border: none;
   border-radius: 25px;
   cursor: pointer;
-  transition:background 0.3s ease-in-out, color 0.3s ease-in-out;
-  
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .carousel-new-arrivals__button:hover {
-  background:var(--used-button-color) ;
-  color:var(--color-secondary);
+  background: var(--used-button-color);
+  color: var(--color-secondary);
 }
 
 .carousel-new-arrivals__arrow {
   position: absolute;
-  padding: 10px;;
+  padding: 10px;
   top: 50%;
   transform: translateY(-50%);
   background: var(--white);
-  color:var(--color-text-secondary);
+  color: var(--color-text-secondary);
   border: none;
   width: 40px;
   height: 40px;
@@ -126,18 +126,40 @@
   font-size: 1.4rem;
 }
 
-.carousel-new-arrivals__arrow:hover {
-  color:var(--color-text-primary);
-}
 .carousel-new-arrivals__arrow--left {
-  left: -90px;
+  left: 10px;
 }
 
 .carousel-new-arrivals__arrow--right {
-  right: -90px;
+  right: 10px;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 767px) {
+  .carousel-new-arrivals__container {
+    padding: 0 10px;
+  }
+
+  .carousel-new-arrivals__item {
+    flex: 0 0 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .carousel-new-arrivals__item {
+    flex: 0 0 calc(50% - 12.5px);
+  }
+}
+
+@media (min-width: 992px) {
+  .carousel-new-arrivals__container {
+    max-width: 1300px;
+    padding: 0 60px;
+  }
+
+  .carousel-new-arrivals__item {
+    flex: 0 0 calc(25% - 18.75px);
+  }
+
   .carousel-new-arrivals__arrow--left {
     left: 5px;
   }
@@ -146,8 +168,13 @@
     right: 5px;
   }
 }
-@media (max-width: 992) {
-  .carousel-new-arrivals__item {
-    flex: 0 0 80%;
-  }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
 }
