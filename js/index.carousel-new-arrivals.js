@@ -1,39 +1,58 @@
 const slides = document.querySelectorAll(".carousel-new-arrivals__item");
-const prevButton = document.querySelector(".carousel-new-arrivals__arrow--left");
-const nextButton = document.querySelector(".carousel-new-arrivals__arrow--right");
-const carouselContainer = document.querySelector(".carousel-new-arrivals__items");
+const prevButton = document.querySelector(
+  ".carousel-new-arrivals__arrow--left"
+);
+const nextButton = document.querySelector(
+  ".carousel-new-arrivals__arrow--right"
+);
+const carouselContainer = document.querySelector(
+  ".carousel-new-arrivals__items"
+);
 
 let currentSlideIdx = 0;
 let visibleSlides = getVisibleSlides();
+const totalSlides = slides.length;
+
+carouselContainer.addEventListener("click", (e) => {
+  const btn = e.target.closest(".carousel-new-arrivals__button");
+  if (!btn) return;
+
+  const productCard = btn.closest(".carousel-new-arrivals__item");
+  const productId = parseInt(productCard.dataset.id);
+
+  if (window.addToCart) {
+    window.addToCart(productId);
+  }
+});
 
 function getVisibleSlides() {
-    if (window.matchMedia("(min-width: 992px)").matches) return 4;
-    if (window.matchMedia("(min-width: 768px)").matches) return 2;
-    return 1;
+  if (window.matchMedia("(min-width: 992px)").matches) return 4;
+  if (window.matchMedia("(min-width: 768px)").matches) return 2;
+  return 1;
 }
 
 function renderCarousel() {
-    carouselContainer.innerHTML = "";
+  carouselContainer.innerHTML = "";
 
-    visibleSlides = getVisibleSlides();
+  visibleSlides = getVisibleSlides();
 
-    for (let i = 0; i < visibleSlides; i++) {
-        let slideIdx = (currentSlideIdx + i) % slides.length;
-        if (slideIdx < 0) {
-            slideIdx = slides.length + slideIdx;
-        }
-        carouselContainer.appendChild(slides[slideIdx].cloneNode(true));
+  for (let i = 0; i < visibleSlides; i++) {
+    let slideIdx = (currentSlideIdx + i) % slides.length;
+    if (slideIdx < 0) {
+      slideIdx = slides.length + slideIdx;
     }
+    carouselContainer.appendChild(slides[slideIdx].cloneNode(true));
+  }
 }
 
 function nextSlide() {
-    currentSlideIdx = (currentSlideIdx + 1) % slides.length;
-    renderCarousel();
+  currentSlideIdx = (currentSlideIdx + 1) % slides.length;
+  renderCarousel();
 }
 
 function prevSlide() {
-    currentSlideIdx = (currentSlideIdx - 1 + slides.length) % slides.length;
-    renderCarousel();
+  currentSlideIdx = (currentSlideIdx - 1 + slides.length) % slides.length;
+  renderCarousel();
 }
 
 renderCarousel();
@@ -41,5 +60,3 @@ renderCarousel();
 nextButton.addEventListener("click", nextSlide);
 prevButton.addEventListener("click", prevSlide);
 window.addEventListener("resize", renderCarousel);
-
-

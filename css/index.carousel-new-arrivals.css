@@ -43,11 +43,11 @@
   align-items: stretch;
   padding: 20px 0;
   width: 100%;
-  overflow: hidden; /* Прибираємо scroll */
+  overflow: hidden;
 }
 
 .carousel-new-arrivals__item {
-  flex: 1 1 auto; /* Гнучкий розмір */
+  flex: 1 1 auto; 
   max-width: 100%;
   background: var(--white);
   border-radius: 8px;

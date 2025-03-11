@@ -208,4 +208,39 @@ const PRODUCTS_LIST = [
     price: 23.00,
     image: "assets/images/carousel-trending-products/dora-pet-carrier.png",
   },
+  {
+    id: 30,
+    category: "new-arrivals",
+    name: "VITALIFE Crunch Sticks Treat",
+    price: 5.00,
+    image: "assets/images/vitalife-crunch-sticks-trea.png",
+  },
+  {
+    id: 31,
+    category: "new-arrivals",
+    name: "DUNA Woven Toy",
+    price: 1.50,
+    image: "assets/images/duna-woven-toy.png",
+  },
+  {
+    id: 32,
+    category: "new-arrivals",
+    name: "SERA Woven Leash",
+    price: 2.00,
+    image: "assets/images/sera-woven-leash.png",
+  },
+  {
+    id: 33,
+    category: "new-arrivals",
+    name: "OPTY Plastic Bowl",
+    price: 3.00,
+    image: "assets/images/opty-plastic-bowl.png",
+  },
+  {
+    id: 34,
+    category: "new-arrivals",
+    name: "EGO Butterfly Toy",
+    price: 8.00,
+    image: "assets/images/ego-butterfly-toy.png",
+  }
 ];
