@@ -1,0 +1,150 @@
+.trending-products {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .section-header h2 {
+    font-family: 'Baloo 2', cursive;
+    font-size: 50px;
+    color: #3C3731;
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .bon-icon {
+    width: 70px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  
+  .section-header .subheader {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 19px;
+    color: #958B7E;
+    margin-bottom: 40px;
+    font-weight: 400;
+  }
+  
+  .carousel-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  
+  .carousel-wrapper {
+    overflow-x: hidden;
+    display: flex;
+    gap: 25px;
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+  }
+  
+  .product-card {
+    flex: 0 0 280px;
+    background-color: #fff;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .product-title {
+    font-size: 18px;
+    font-family: 'PT Sans', sans-serif;
+    color: #958B7E;
+    margin: 24px 0 0;
+    font-weight: 400;
+    text-align: left;
+  }
+  
+  .price {
+    font-size: 20px;
+    font-family: 'PT Sans', sans-serif;
+    color: #ff6600;
+    font-weight: 700;
+    margin: 10px 0;
+    text-align: left;
+  }
+  
+  .add-to-cart {
+    background-color: #A8E8EA;
+    color: #45C1C7;
+    font-size: 16.5px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border: none;
+    padding: 0;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 144.77px;
+    height: 48.5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    margin-left: 0;
+    line-height: 48.5px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #90DDE0;
+  }
+  
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #27ae60;
+    font-size: 1.4rem;
+  }
+  
+  .carousel-control.prev {
+    left: -20px;
+  }
+  
+  .carousel-control.next {
+    right: -20px;
+  }
+  
+  .carousel-control:hover {
+    background: #f1f1f1;
+  }
+  
+  @media (max-width: 768px) {
+    .product-card {
+      flex: 0 0 80%;
+    }
+    .carousel-control {
+      display: none;
+    }
+  }

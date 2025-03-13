@@ -1,0 +1,18 @@
+.button {
+    font-family: var(--body-font);
+    font-weight: bold;
+    font-size: 16.5px;
+    display: inline-block;
+    padding: 13px 25px;
+    color: var(--button-text-color);
+    background-color: var(--button-color);
+    border-radius: 30px;
+    cursor: pointer;
+
+    &:hover {
+        transition: color 0.4s ease;
+        color: var(--price-color);
+        background-color: var(--used-button-color);
+    }
+
+}

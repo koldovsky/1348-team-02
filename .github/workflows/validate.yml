@@ -25,3 +25,4 @@ jobs:
         for file in $(find . -maxdepth 1 -iname "*.html"); do
           htmlproofer $file --disable-external
         done
+    
